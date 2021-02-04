@@ -1,0 +1,93 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: nlqs.nlq.ibm.com
+  labels:
+    app.kubernetes.io/instance: master-test
+    app.kubernetes.io/managed-by: helm
+    app.kubernetes.io/name: ibm-business-automation-insights
+spec:
+  group: nlq.ibm.com
+  names:
+    kind: NLQ
+    listKind: NLQList
+    plural: nlqs
+    singular: nlq
+  scope: Namespaced
+  versions:
+  - name: v1alpha1
+    schema:
+      openAPIV3Schema:
+        description: NLQ is the Schema for the nlqs API
+        properties:
+          apiVersion:
+            description: 'APIVersion defines the versioned schema of this representation
+              of an object. Servers should convert recognized schemas to the latest
+              internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+            type: string
+          kind:
+            description: 'Kind is a string value representing the REST resource this
+              object represents. Servers may infer this from the endpoint the client
+              submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+            type: string
+          metadata:
+            type: object
+          spec:
+            description: NLQSpec defines the desired state of NLQ
+            properties:
+              acceptlicense:
+                type: boolean
+              coreimage:
+                type: string
+              cp4acrprefix:
+                type: string
+              deploymentimage:
+                type: string
+              deploymentport:
+                format: int32
+                type: integer
+              esindex:
+                type: string
+              espassword:
+                type: string
+              esserver:
+                type: string
+              esusername:
+                type: string
+              imagepullsecretname:
+                type: string
+              imagerepository:
+                type: string
+              imagetag:
+                type: string
+              ontologyimage:
+                type: string
+              ontologyport:
+                format: int32
+                type: integer
+              runtimeimage:
+                type: string
+              size:
+                description: 'INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
+                  Important: Run "operator-sdk generate k8s" to regenerate code after
+                  modifying this file Add custom validation using kubebuilder tags:
+                  https://book-v1.book.kubebuilder.io/beyond_basics/generating_crd.html'
+                format: int32
+                type: integer
+              verdiservice:
+                type: string
+            required:
+            - acceptlicense
+            - deploymentport
+            - esindex
+            - ontologyport
+            - size
+            type: object
+          status:
+            description: NLQStatus defines the observed state of NLQ
+            type: object
+        type: object
+    served: true
+    storage: true
+    subresources:
+      status: {}

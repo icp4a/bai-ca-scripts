@@ -1,0 +1,613 @@
+{
+   "version":"0.9.1",
+   "timestamp":"2019-07-02T18:54:02.282+02:00",
+   "assetPath":"/test_deployment/1.0/loan_validation_with_score_and_grade/1.0",
+   "signature":{
+      "parameters":[
+         {
+            "name":"borrower",
+            "direction":"input",
+            "verbalization":"the borrower",
+            "type":"loan.borrower",
+            "initialValue":""
+         },
+         {
+            "name":"loan",
+            "direction":"input",
+            "verbalization":"the loan",
+            "type":"loan.Loan",
+            "initialValue":""
+         },
+         {
+            "name":"report",
+            "direction":"output",
+            "verbalization":"the report",
+            "type":"loan.Report",
+            "initialValue":""
+         },
+         {
+            "name":"grade",
+            "direction":"output",
+            "verbalization":"the grade",
+            "type":"java.lang.integer",
+            "initialValue":""
+         },
+         {
+            "name":"score",
+            "direction":"output",
+            "verbalization":"the score",
+            "type":"java.lang.integer",
+            "initialValue":""
+         }
+      ]
+   },
+   "concepts":[
+      {
+         "name":"loan.Report",
+         "label":"report",
+         "pluralLabel":"reports",
+         "attributes":[
+            {
+               "name":"loan.Report.insuranceRate",
+               "type":"double",
+               "roleLabel":"insurance rate",
+               "pluralRoleLabel":"insurance rates"
+            },
+            {
+               "name":"loan.Report.yearlyInterestRate",
+               "type":"double",
+               "roleLabel":"yearly interest rate",
+               "pluralRoleLabel":"yearly interest rates"
+            },
+            {
+               "name":"loan.Report.validData",
+               "type":"boolean",
+               "roleLabel":"valid data",
+               "pluralRoleLabel":"valid datas"
+            },
+            {
+               "name":"loan.Report.insuranceRequired",
+               "type":"boolean",
+               "roleLabel":"insurance required",
+               "pluralRoleLabel":"insurance requireds"
+            },
+            {
+               "name":"loan.Report.loan",
+               "type":"loan.LoanRequest",
+               "roleLabel":"loan",
+               "pluralRoleLabel":"loans"
+            },
+            {
+               "name":"loan.Report.insurance",
+               "type":"java.lang.String",
+               "roleLabel":"insurance",
+               "pluralRoleLabel":"insurances"
+            },
+            {
+               "name":"loan.Report.monthlyRepayment",
+               "type":"double",
+               "roleLabel":"monthly repayment",
+               "pluralRoleLabel":"monthly repayments"
+            },
+            {
+               "name":"loan.Report.yearlyRepayment",
+               "type":"double",
+               "roleLabel":"yearly repayment",
+               "pluralRoleLabel":"yearly repayments"
+            },
+            {
+               "name":"loan.Report.approved",
+               "type":"boolean",
+               "roleLabel":"approved",
+               "pluralRoleLabel":"approveds"
+            },
+            {
+               "name":"loan.Report.borrower",
+               "type":"loan.Borrower",
+               "roleLabel":"borrower",
+               "pluralRoleLabel":"borrowers"
+            },
+            {
+               "name":"loan.Report.message",
+               "type":"java.lang.String",
+               "roleLabel":"message",
+               "pluralRoleLabel":"messages"
+            },
+            {
+               "name":"loan.Report.messages",
+               "type":"java.util.List",
+               "roleLabel":"message",
+               "pluralRoleLabel":"messages"
+            }
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"loan.Borrower",
+         "label":"borrower",
+         "pluralLabel":"borrowers",
+         "attributes":[
+            {
+               "name":"loan.Borrower.yearlyIncome",
+               "type":"int",
+               "roleLabel":"yearly income",
+               "pluralRoleLabel":"yearly incomes"
+            },
+            {
+               "name":"loan.Borrower.creditScore",
+               "type":"int",
+               "roleLabel":"credit score",
+               "pluralRoleLabel":"credit scores"
+            },
+            {
+               "name":"loan.Borrower.latestBankruptcyChapter",
+               "type":"int",
+               "roleLabel":"latest bankruptcy chapter",
+               "pluralRoleLabel":"latest bankruptcy chapters"
+            },
+            {
+               "name":"loan.Borrower.birthDate",
+               "type":"java.util.Date",
+               "roleLabel":"birth date",
+               "pluralRoleLabel":"birth dates"
+            },
+            {
+               "name":"loan.Borrower.spouse",
+               "type":"loan.Borrower",
+               "roleLabel":"spouse",
+               "pluralRoleLabel":"spouses"
+            },
+            {
+               "name":"loan.Borrower.latestBankruptcyReason",
+               "type":"java.lang.String",
+               "roleLabel":"latest bankruptcy reason",
+               "pluralRoleLabel":"latest bankruptcy reasons"
+            },
+            {
+               "name":"loan.Borrower.lastName",
+               "type":"java.lang.String",
+               "roleLabel":"last name",
+               "pluralRoleLabel":"last names"
+            },
+            {
+               "name":"loan.Borrower.firstName",
+               "type":"java.lang.String",
+               "roleLabel":"first name",
+               "pluralRoleLabel":"first names"
+            },
+            {
+               "name":"loan.Borrower.ssn",
+               "type":"loan.Borrower.SSN",
+               "roleLabel":"SSN",
+               "pluralRoleLabel":"SSNs"
+            },
+            {
+               "name":"loan.Borrower.zipCode",
+               "type":"java.lang.String",
+               "roleLabel":"zip code",
+               "pluralRoleLabel":"zip codes"
+            },
+            {
+               "name":"loan.Borrower.age",
+               "type":"int",
+               "roleLabel":"age",
+               "pluralRoleLabel":"ages"
+            },
+            {
+               "name":"loan.Borrower.latestBankruptcyDate",
+               "type":"java.util.Date",
+               "roleLabel":"latest bankruptcy date",
+               "pluralRoleLabel":"latest bankruptcy dates"
+            },
+            {
+               "name":"loan.Borrower.SSNCode",
+               "type":"java.lang.String",
+               "roleLabel":"SSNCode",
+               "pluralRoleLabel":"SSNCodes"
+            }
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"loan.Borrower.Bankruptcy",
+         "label":"bankruptcy",
+         "pluralLabel":"bankruptcies",
+         "attributes":[
+            {
+               "name":"loan.Borrower.Bankruptcy.reason",
+               "type":"java.lang.String",
+               "roleLabel":"reason",
+               "pluralRoleLabel":"reasons"
+            },
+            {
+               "name":"loan.Borrower.Bankruptcy.chapter",
+               "type":"int",
+               "roleLabel":"chapter",
+               "pluralRoleLabel":"chapters"
+            },
+            {
+               "name":"loan.Borrower.Bankruptcy.date",
+               "type":"java.util.Date",
+               "roleLabel":"date",
+               "pluralRoleLabel":"dates"
+            }
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"loan.Borrower.SSN",
+         "label":"SSN",
+         "pluralLabel":"SSNs",
+         "attributes":[
+            {
+               "name":"loan.Borrower.SSN.fullNumber",
+               "type":"java.lang.String",
+               "roleLabel":"full number",
+               "pluralRoleLabel":"full numbers"
+            },
+            {
+               "name":"loan.Borrower.SSN.groupCode",
+               "type":"java.lang.String",
+               "roleLabel":"group code",
+               "pluralRoleLabel":"group codes"
+            },
+            {
+               "name":"loan.Borrower.SSN.digits",
+               "type":"int",
+               "roleLabel":"number of digits",
+               "pluralRoleLabel":"numbers of digits"
+            },
+            {
+               "name":"loan.Borrower.SSN.serialNumber",
+               "type":"java.lang.String",
+               "roleLabel":"serial number",
+               "pluralRoleLabel":"serial numbers"
+            },
+            {
+               "name":"loan.Borrower.SSN.areaNumber",
+               "type":"java.lang.String",
+               "roleLabel":"area number",
+               "pluralRoleLabel":"area numbers"
+            }
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"loan.LoanUtil",
+         "label":"loan util",
+         "pluralLabel":"loan utils",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"loan.LoanRequest",
+         "label":"loan",
+         "pluralLabel":"loans",
+         "attributes":[
+            {
+               "name":"loan.LoanRequest.loanToValue",
+               "type":"double",
+               "roleLabel":"Loan to Value",
+               "pluralRoleLabel":"Loan to Values"
+            },
+            {
+               "name":"loan.LoanRequest.amount",
+               "type":"int",
+               "roleLabel":"amount",
+               "pluralRoleLabel":"amounts"
+            },
+            {
+               "name":"loan.LoanRequest.numberOfMonthlyPayments",
+               "type":"int",
+               "roleLabel":"number of monthly payments",
+               "pluralRoleLabel":"number of monthly paymentses"
+            },
+            {
+               "name":"loan.LoanRequest.duration",
+               "type":"int",
+               "roleLabel":"duration",
+               "pluralRoleLabel":"durations"
+            },
+            {
+               "name":"loan.LoanRequest.startDate",
+               "type":"java.util.Date",
+               "roleLabel":"start date",
+               "pluralRoleLabel":"start dates"
+            }
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"com.ibm.rules.event.Event",
+         "label":"event",
+         "pluralLabel":"events",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"java.io.Serializable",
+         "label":null,
+         "pluralLabel":"nulls",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.DayOfWeek",
+         "label":"day of week",
+         "pluralLabel":"day of weeks",
+         "attributes":[
+
+         ],
+         "constants":[
+            {
+               "name":"ilog.rules.brl.DayOfWeek.Friday",
+               "constantLabel":"Friday",
+               "pluralConstantLabel":"Fridays"
+            },
+            {
+               "name":"ilog.rules.brl.DayOfWeek.Sunday",
+               "constantLabel":"Sunday",
+               "pluralConstantLabel":"Sundays"
+            },
+            {
+               "name":"ilog.rules.brl.DayOfWeek.Thursday",
+               "constantLabel":"Thursday",
+               "pluralConstantLabel":"Thursdays"
+            },
+            {
+               "name":"ilog.rules.brl.DayOfWeek.Saturday",
+               "constantLabel":"Saturday",
+               "pluralConstantLabel":"Saturdays"
+            },
+            {
+               "name":"ilog.rules.brl.DayOfWeek.Tuesday",
+               "constantLabel":"Tuesday",
+               "pluralConstantLabel":"Tuesdays"
+            },
+            {
+               "name":"ilog.rules.brl.DayOfWeek.Monday",
+               "constantLabel":"Monday",
+               "pluralConstantLabel":"Mondays"
+            },
+            {
+               "name":"ilog.rules.brl.DayOfWeek.Wednesday",
+               "constantLabel":"Wednesday",
+               "pluralConstantLabel":"Wednesdays"
+            }
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.Character",
+         "label":"character",
+         "pluralLabel":"characters",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.Time",
+         "label":"time",
+         "pluralLabel":"times",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.String",
+         "label":"string",
+         "pluralLabel":"strings",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.Date",
+         "label":"date",
+         "pluralLabel":"dates",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.System",
+         "label":"system",
+         "pluralLabel":"systems",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.UniversalDate",
+         "label":"universal date",
+         "pluralLabel":"universal dates",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.Month",
+         "label":"month",
+         "pluralLabel":"months",
+         "attributes":[
+
+         ],
+         "constants":[
+            {
+               "name":"ilog.rules.brl.Month.September",
+               "constantLabel":"September",
+               "pluralConstantLabel":"Septembers"
+            },
+            {
+               "name":"ilog.rules.brl.Month.April",
+               "constantLabel":"April",
+               "pluralConstantLabel":"Aprils"
+            },
+            {
+               "name":"ilog.rules.brl.Month.December",
+               "constantLabel":"December",
+               "pluralConstantLabel":"Decembers"
+            },
+            {
+               "name":"ilog.rules.brl.Month.March",
+               "constantLabel":"March",
+               "pluralConstantLabel":"Marchs"
+            },
+            {
+               "name":"ilog.rules.brl.Month.January",
+               "constantLabel":"January",
+               "pluralConstantLabel":"Januaries"
+            },
+            {
+               "name":"ilog.rules.brl.Month.November",
+               "constantLabel":"November",
+               "pluralConstantLabel":"Novembers"
+            },
+            {
+               "name":"ilog.rules.brl.Month.July",
+               "constantLabel":"July",
+               "pluralConstantLabel":"Julies"
+            },
+            {
+               "name":"ilog.rules.brl.Month.May",
+               "constantLabel":"May",
+               "pluralConstantLabel":"Mays"
+            },
+            {
+               "name":"ilog.rules.brl.Month.October",
+               "constantLabel":"October",
+               "pluralConstantLabel":"Octobers"
+            },
+            {
+               "name":"ilog.rules.brl.Month.June",
+               "constantLabel":"June",
+               "pluralConstantLabel":"Junes"
+            },
+            {
+               "name":"ilog.rules.brl.Month.February",
+               "constantLabel":"February",
+               "pluralConstantLabel":"Februaries"
+            },
+            {
+               "name":"ilog.rules.brl.Month.August",
+               "constantLabel":"August",
+               "pluralConstantLabel":"Augusts"
+            }
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.Year",
+         "label":"year",
+         "pluralLabel":"years",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.Number",
+         "label":"number",
+         "pluralLabel":"numbers",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.SimpleDate",
+         "label":"simple date",
+         "pluralLabel":"simple dates",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.UniversalTime",
+         "label":"universal time",
+         "pluralLabel":"universal times",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.Object",
+         "label":"object",
+         "pluralLabel":"objects",
+         "attributes":[
+
+         ],
+         "constants":[
+
+         ]
+      },
+      {
+         "name":"ilog.rules.brl.Boolean",
+         "label":"boolean",
+         "pluralLabel":"booleans",
+         "attributes":[
+
+         ],
+         "constants":[
+            {
+               "name":"ilog.rules.brl.Boolean.FALSE",
+               "constantLabel":"false",
+               "pluralConstantLabel":"falses"
+            },
+            {
+               "name":"ilog.rules.brl.Boolean.TRUE",
+               "constantLabel":"true",
+               "pluralConstantLabel":"trues"
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,387 @@
+{
+  "intents": [
+    {
+      "intent": "Agent_Ability_Information",
+      "examples": [
+        {
+          "text": "how can I use the system"
+        },
+        {
+          "text": "Is there anything you can help me with"
+        },
+        {
+          "text": "What are you good"
+        },
+        {
+          "text": "what can I ask"
+        },
+        {
+          "text": "what can I ask you"
+        },
+        {
+          "text": "what can I type"
+        },
+        {
+          "text": "what can you answer"
+        },
+        {
+          "text": "what can you do"
+        },
+        {
+          "text": "what can you help"
+        },
+        {
+          "text": "What can you help me with?"
+        },
+        {
+          "text": "what can you provide"
+        },
+        {
+          "text": "what do you do"
+        },
+        {
+          "text": "what kinds of things do you know about"
+        },
+        {
+          "text": "what should I type"
+        },
+        {
+          "text": "what you know"
+        },
+        {
+          "text": "what you leaned"
+        }
+      ]
+    },
+    {
+      "intent": "Agent_Personal_Details_Information",
+      "examples": [
+        {
+          "text": "can you tell me about your self"
+        },
+        {
+          "text": "can you tell me about yourself?"
+        },
+        {
+          "text": "describe your self to me"
+        },
+        {
+          "text": "how about yourself?"
+        },
+        {
+          "text": "How do you describe yourself"
+        },
+        {
+          "text": "How do you describe your self"
+        },
+        {
+          "text": "How would you describe your self?"
+        },
+        {
+          "text": "How would you describe yourself?"
+        },
+        {
+          "text": "let us talk about you"
+        },
+        {
+          "text": "tell about the real you"
+        },
+        {
+          "text": "tell me about you"
+        },
+        {
+          "text": "tell me everything about you"
+        },
+        {
+          "text": "tell me more about yourself"
+        },
+        {
+          "text": "tell me more about your self"
+        },
+        {
+          "text": "tell me something about yourself"
+        },
+        {
+          "text": "tell me something about your self"
+        },
+        {
+          "text": "What is one thing about you that you would like me to know?"
+        }
+      ]
+    },
+    {
+      "intent": "Sample-NLQ-queries",
+      "examples": [
+        {
+          "text": "Can you provide a list of queries that can be executed"
+        },
+        {
+          "text": "Can you provide sample queries i can run"
+        },
+        {
+          "text": "Can you show me example queries"
+        },
+        {
+          "text": "Can you show me sample queries"
+        },
+        {
+          "text": "Could you show me some examples"
+        },
+        {
+          "text": "Do you have examples of queries?"
+        },
+        {
+          "text": "Do you have sample queries that are supported"
+        },
+        {
+          "text": "Help"
+        },
+        {
+          "text": "Help me"
+        },
+        {
+          "text": "Is there a list of sample queries"
+        },
+        {
+          "text": "Is there a list of sample queries i can see"
+        },
+        {
+          "text": "Please give me examples of supported queries"
+        },
+        {
+          "text": "Please help"
+        },
+        {
+          "text": "Please list possible queries that i can run"
+        },
+        {
+          "text": "Please list supported queries"
+        },
+        {
+          "text": "Please propose examples of queries"
+        },
+        {
+          "text": "Please show me a few examples"
+        },
+        {
+          "text": "Provide a list of queries that i can run"
+        },
+        {
+          "text": "Provide a lsit of queries that can be executed"
+        },
+        {
+          "text": "Show me a few sample queries"
+        },
+        {
+          "text": "Show me example sentences"
+        },
+        {
+          "text": "Show me sample queries"
+        },
+        {
+          "text": "Show me sample sentences supported by the query agent"
+        },
+        {
+          "text": "Show me sample utterances"
+        },
+        {
+          "text": "Show me some examples"
+        },
+        {
+          "text": "Show me some examples please"
+        },
+        {
+          "text": "Show me some supported querieis"
+        },
+        {
+          "text": "Show me supported querying sentences"
+        },
+        {
+          "text": "What are a few supported queries"
+        },
+        {
+          "text": "What are some queries that you support"
+        },
+        {
+          "text": "What queries are supported"
+        },
+        {
+          "text": "What queries are supported?"
+        },
+        {
+          "text": "What queries can i run"
+        },
+        {
+          "text": "What queries do you support"
+        },
+        {
+          "text": "What sentences are supported"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "text": {
+          "values": [
+            "I didn't understand. You can try rephrasing.",
+            "Can you reword your statement? I'm not understanding.",
+            "I didn't get your meaning."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_3_1561747467556"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "I can help you run queries on your BAI data lake related to your loan business process like  •\tWhat is the average loan amount for borrowers with credit score more than 500\n•\tWhat is the maximum amount for borrowers with yearly income less than 45000\n•\tWhat is the number of loan applications submitted in last 6 months with borrower's credit score less than 400\n•\tFind top 3 zip codes in terms of total amount of loans\n•\tList all borrowers with yearly income more than 50000 but credit score less than 500\n•\tShow me all borrowers with loans in 2019\n•\tExport this data to CSV file\n•\tPlot this data as a bar graph per zip code"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#Agent_Ability_Information",
+      "dialog_node": "node_1_1561747459115",
+      "previous_sibling": "node_9_1586526287634"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "My name is BAI Interactive Digital Assistant. I am your personal cognitive assistant and can help you navigate the loan approval decisions in ElasticSearch. For example, you can type \"List all borrowers with yearly income more than 50000 but credit score less than 400\" to see query results then type \"plot this data in a bar graph per zip code\" to visualize the data or \"export this data to a CSV file\" to save the data. Let me know if you have any questions."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "source": "https://www.botgento.com/blog/content/images/2019/01/How-Chatbot-Is-Going-To-Change-Travel-Industry-Strategies..jpg",
+            "description": "",
+            "response_type": "image"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#Agent_Identity_Information",
+      "dialog_node": "node_2_1561747464168",
+      "previous_sibling": "node_1_1561747459115"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "I am a cognitive assistant developed by IBM Research. You can chat with me any time you want! Try typing \"what can i do\" to see what i can help you with"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#Agent_Personal_Details_Information",
+      "dialog_node": "node_3_1561747467556",
+      "previous_sibling": "node_2_1561747464168"
+    },
+    {
+      "type": "standard",
+      "title": "Sample Queries",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here are a few examples of supported queries:  •\tWhat is the average loan amount for borrowers with credit score more than 500\n•\tWhat is the maximum amount for borrowers with yearly income less than 45000\n•\tWhat is the number of loan applications submitted in last 6 months with borrower's credit score less than 400\n•\tFind top 3 zip codes in terms of total amount of loans\n•\tList all borrowers with yearly income more than 50000 but credit score less than 500\n•\tShow me all borrowers with loans in 2019\n•\tWhat is the average loan amount for each zip code\n•\tFind the worst 3 yearly income by maximum loan amounts\n•\tExport this data to a CSV file\n•\tPlot this data as a bar graph per zip code"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Sample-NLQ-queries",
+      "dialog_node": "node_9_1586526287634",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "text": {
+          "values": [
+            "Hello. How can I help you?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "can you forward this file to yara.rizk@ibm.com"
+    },
+    {
+      "text": "Can you help me process my loan application?"
+    },
+    {
+      "text": "use column short_name"
+    },
+    {
+      "text": "what conferences does Mikhail Yurochkin have papers in"
+    },
+    {
+      "text": "what conferences has Mikhail Yurochkin submitted to"
+    },
+    {
+      "text": "what is the address of the borrower?"
+    },
+    {
+      "text": "what is the average duration taken by each stage in loan processing application"
+    },
+    {
+      "text": "What is the average/max/min loan amount requested by borrowers with credit score more than 500 in last 3 months"
+    },
+    {
+      "text": "who are the top 3 borrowers with yearly income more than 50000"
+    },
+    {
+      "text": "who are the top 3 borrowers with yearly income more than 50000 but credit score less than 550"
+    },
+    {
+      "text": "you are awesome"
+    },
+    {
+      "text": "you are selling yourself short"
+    }
+  ],
+  "system_settings": {
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "about-WA",
+  "language": "en",
+  "description": "Minimal workspace with no apps. Use this as base for new ones, such as for new developers. (do not change, please.)"
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="Shipment_Pricing_RuleApp" managingXom="true">
+  <eAnnotations source="ilog.rules.custom_properties">
+    <details key="Dep_Groups" value="rtsAdministrator,rtsConfigManager"/>
+    <details key="Dep_SnapshotCreationKind" value="ALWAYS"/>
+  </eAnnotations>
+  <name>Shipment Pricing Deployment</name>
+  <uuid>ccfdf39a-0185-463c-a6a3-b6c843d1ca20</uuid>
+  <targets active="true" label="Decision Service Execution"/>
+  <operations operationName="Shipment Pricing Operation">
+    <operation href="Shipment%20Pricing%20Operation.dop#acbe5da6-7e75-4397-89d0-31e28f345378"/>
+    <properties key="ruleset.version">
+      <value><![CDATA[1.0]]></value>
+    </properties>
+  </operations>
+  <versionPolicies label="Increment minor" ruleset="INCREMENT_MINOR" ruleapp="INCREMENT_MINOR" default="true" recurrent="true">
+    <description><![CDATA[Increment minor version]]></description>
+  </versionPolicies>
+</com.ibm.rules.studio.model.decisionservice:Deployment>

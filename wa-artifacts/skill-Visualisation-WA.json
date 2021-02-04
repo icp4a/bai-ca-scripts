@@ -1,0 +1,363 @@
+{
+  "intents": [
+    {
+      "intent": "use_column",
+      "examples": [
+        {
+          "text": "can you do it with column ssncode"
+        },
+        {
+          "text": "column @number"
+        },
+        {
+          "text": "column @number and @number"
+        },
+        {
+          "text": "do it with column loan amount"
+        },
+        {
+          "text": "i want the column <value>"
+        },
+        {
+          "text": "i want <value> column and <value> column"
+        },
+        {
+          "text": "loan grade column"
+        },
+        {
+          "text": "@number"
+        },
+        {
+          "text": "@number and @number"
+        },
+        {
+          "text": "plot columns <value> and <value>"
+        },
+        {
+          "text": "plot column <value>"
+        },
+        {
+          "text": "plot using ID @number"
+        },
+        {
+          "text": "plot using ID @number and @number"
+        },
+        {
+          "text": "plot using @number"
+        },
+        {
+          "text": "plot using @number and @number"
+        },
+        {
+          "text": "use column <value>"
+        },
+        {
+          "text": "use <value> column"
+        },
+        {
+          "text": "with column <value>"
+        }
+      ],
+      "description": "pick the column to be plotted"
+    },
+    {
+      "intent": "visualize_agent",
+      "examples": [
+        {
+          "text": "Can you create a chart from this data"
+        },
+        {
+          "text": "Can you graph the data"
+        },
+        {
+          "text": "Can you graph this data for me"
+        },
+        {
+          "text": "Can you plot bar graph for this data"
+        },
+        {
+          "text": "Can you plot @column_name as a bar graph"
+        },
+        {
+          "text": "Chart it"
+        },
+        {
+          "text": "Chart the data"
+        },
+        {
+          "text": "Chart the data for me"
+        },
+        {
+          "text": "Chart the data in a donut graph"
+        },
+        {
+          "text": "could you show me this data in the form of a bar chart"
+        },
+        {
+          "text": "could you visualize this as a histogram"
+        },
+        {
+          "text": "Create a bar graph"
+        },
+        {
+          "text": "Create a chart"
+        },
+        {
+          "text": "Create a chart from this data"
+        },
+        {
+          "text": "Create a chart from this data please"
+        },
+        {
+          "text": "Create a diagram"
+        },
+        {
+          "text": "Create a diagram from the data"
+        },
+        {
+          "text": "Create a donut chart"
+        },
+        {
+          "text": "Create a graph from the data"
+        },
+        {
+          "text": "Create a graph please"
+        },
+        {
+          "text": "Create a graph to visualize this data"
+        },
+        {
+          "text": "Create a histogram plot"
+        },
+        {
+          "text": "Create a scatter plot"
+        },
+        {
+          "text": "create a scatter plot for me with this data"
+        },
+        {
+          "text": "Create a trace of the data"
+        },
+        {
+          "text": "Draw a bar chart for this data"
+        },
+        {
+          "text": "Draw it"
+        },
+        {
+          "text": "Draw this data in a plot"
+        },
+        {
+          "text": "Draw up this data please"
+        },
+        {
+          "text": "Graph it"
+        },
+        {
+          "text": "Graph me this data"
+        },
+        {
+          "text": "Graph the data"
+        },
+        {
+          "text": "Graph the data please"
+        },
+        {
+          "text": "Graph this data for me"
+        },
+        {
+          "text": "I want to chart this data"
+        },
+        {
+          "text": "Please chart the data"
+        },
+        {
+          "text": "Please chart this data"
+        },
+        {
+          "text": "Plot a bar chart"
+        },
+        {
+          "text": "Plot a bar graph for @column_name"
+        },
+        {
+          "text": "plot a donut chart for me"
+        },
+        {
+          "text": "plot a donut chart with @column_name"
+        },
+        {
+          "text": "Plot a histogram"
+        },
+        {
+          "text": "Plot as a bar chart"
+        },
+        {
+          "text": "Plot as a bar graph"
+        },
+        {
+          "text": "Plot it"
+        },
+        {
+          "text": "Plot the @column_name"
+        },
+        {
+          "text": "Plot this data as a bar chart per @column_name"
+        },
+        {
+          "text": "plot this data with scatter plot"
+        },
+        {
+          "text": "show me this data in the form of a scatter plot"
+        },
+        {
+          "text": "Trace the data"
+        },
+        {
+          "text": "visualize the data as a bar chart"
+        },
+        {
+          "text": "visualize the data as a bar graph"
+        },
+        {
+          "text": "visualize the data as a scatter plot"
+        },
+        {
+          "text": "visualize this as a donut chart"
+        }
+      ],
+      "description": "Plot a graph from present data in the system"
+    }
+  ],
+  "entities": [],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_7_1583897952168"
+    },
+    {
+      "type": "standard",
+      "title": "visualize",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What variable would you like to plot?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#visualize_agent",
+      "dialog_node": "node_7_1583897952168",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "request_column_name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Okay, here is your plot"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1583897952168",
+      "conditions": "#use_column",
+      "dialog_node": "node_8_1583901078000"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "export the data as csv"
+    },
+    {
+      "text": "Give me all loans approved for borrowers with a credit score greater than 675"
+    },
+    {
+      "text": "Retrieve the applicant's address"
+    },
+    {
+      "text": "Show borrowers credit score loan grade loan amount ssncode and zipcode"
+    },
+    {
+      "text": "What is the total loan amount for borrowers with credit score more than 550 group by zipcode"
+    },
+    {
+      "text": "zipcode"
+    }
+  ],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Visualisation-WA",
+  "language": "en",
+  "description": "Visualize data by plotting bar graph, donut chart..."
+}

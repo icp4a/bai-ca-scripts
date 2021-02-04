@@ -1,0 +1,145 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/Segmentation5//WebPerso-xom"
+property uuid "6692a5a2-eced-4392-b700-3a9083f84189"
+package poc.ilog.webperso;
+
+
+public class Campaign
+{
+    public string channel;
+    public int id;
+    public string name;
+    public java.util.ArrayList segments domain 0,* class poc.ilog.webperso.Segment;
+    public string type;
+    public Campaign();
+}
+
+public class Client
+{
+    public int id;
+    public string name;
+    public Client();
+}
+
+public class Consumer
+{
+    public int age;
+    public int areacode;
+    public string browsertype;
+    public string city;
+    public int consumerid;
+    public int cookieid;
+    public java.util.Date createdon;
+    public java.util.Date dateofbirth;
+    public string emailaddress;
+    public string firstname;
+    public string gender;
+    public int incomegroupcode;
+    public string ipaddress;
+    public string lastname;
+    public java.util.Date lastsubscribedon;
+    public java.util.Date lastunsubscribedon;
+    public java.util.Date lastupdatedon;
+    public java.util.ArrayList messages domain 0,* class string;
+    public string middlename;
+    public int monthlypreferredmsgfrequency;
+    public int mtdmessagecount;
+    public string nickname;
+    public string password;
+    public int personicscluster;
+    public string phonenumber;
+    public string preferredchannel;
+    public string prodcatofinterest1;
+    public string prodcatofinterest2;
+    public string prodstyleofinterest;
+    public string profilesource;
+    public double propensitytoclick;
+    public double propensitytoopen;
+    public double propensitytopurchase;
+    public double propensitytovisit;
+    public string purchasedprodcat1;
+    public string purchasedprodcat2;
+    public string state;
+    public string statusactive;
+    public string username;
+    public string zipcode;
+    public Consumer(int arg1, 
+        int arg2, 
+        string arg3, 
+        string arg4, 
+        string arg5, 
+        string arg6, 
+        string arg7, 
+        string arg8, 
+        string arg9, 
+        string arg10, 
+        string arg11, 
+        java.util.Date arg12, 
+        int arg13, 
+        string arg14, 
+        int arg15, 
+        int arg16, 
+        string arg17, 
+        string arg18, 
+        string arg19, 
+        int arg20, 
+        string arg21, 
+        string arg22, 
+        string arg23, 
+        string arg24, 
+        string arg25, 
+        double arg26, 
+        double arg27, 
+        double arg28, 
+        double arg29, 
+        string arg30, 
+        string arg31, 
+        string arg32, 
+        int arg33, 
+        int arg34, 
+        string arg35, 
+        java.util.Date arg36, 
+        java.util.Date arg37, 
+        java.util.Date arg38, 
+        java.util.Date arg39);
+    public Consumer();
+    public java.util.Collection getEvents(string eventType domain {(string) "PURCHASE", (string) "ABANDON"}, 
+        int nbDaysBack) domain 0,* class poc.ilog.webperso.Event;
+}
+
+public class Event
+{
+    public string abandonedprodcategory;
+    public string abandonedprodstyle;
+    public string channel;
+    public int consumerid;
+    public int contentid;
+    public string contentprodcategory;
+    public string contentprodstyle;
+    public string contenttype;
+    public int eventid;
+    public java.util.Date eventtime;
+    public string eventtype;
+    public string purchasedprodcategory;
+    public string purchasedprodstyle;
+    public string source;
+    public string type;
+    public Event();
+}
+
+public class EventLoader
+{
+    public EventLoader();
+    public static java.util.Collection getEvents(string arg1, int arg2, int arg3) domain 0,* class poc.ilog.webperso.Event;
+}
+
+public class Segment
+{
+    public int id;
+    public string name;
+    public float score;
+    public Segment();
+    public void addToScore(float value);
+}
+

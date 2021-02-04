@@ -1,0 +1,24 @@
+apiVersion: nlq.ibm.com/v1alpha1
+kind: NLQ
+metadata:
+  name: bai-verdi-nlq-techpreview
+  labels:
+    app.kubernetes.io/instance: master-test
+    app.kubernetes.io/managed-by: helm
+    app.kubernetes.io/name: ibm-business-automation-insights
+spec:
+  # Add fields here
+  size: 1
+  deploymentport: 7000
+  ontologyport: 7002
+  esindex: "indexname"
+  verdiservice: "bai-verdi-techpreview-service"
+#  ontologyimage: "specific image name"
+#  deploymentimage: "specific image name"
+#  coreimage: "specific image name"
+#  runtimeimage: "specific image name"
+  cp4acrprefix: "bai"
+  imagerepository: "image repo"
+  imagepullsecretname: "image pull repo credentials"
+  imagetag: "tag-name"
+  acceptlicense: true

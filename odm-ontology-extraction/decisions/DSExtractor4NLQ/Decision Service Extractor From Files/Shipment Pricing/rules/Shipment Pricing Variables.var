@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Shipment Pricing Variables</name>
+  <uuid>8bcda6cc-f519-4e4b-8473-7490189c73b7</uuid>
+  <variables name="Price" type="java.lang.Double" verbalization="Price"/>
+  <variables name="Shipment" type="myModel.odm.Shipment" verbalization="shipment"/>
+  <variables name="Customer" type="myModel.CustomerStatus" verbalization="customer"/>
+  <variables name="Method" type="myModel.odm.Method" verbalization="method"/>
+  <variables name="Distance" type="java.lang.Double" verbalization="distance"/>
+</ilog.rules.studio.model.base:VariableSet>

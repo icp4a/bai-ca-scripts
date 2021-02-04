@@ -1,0 +1,204 @@
+
+property Creator "Decision Composer:8.10.0.0"
+property loadGetterSetterAsProperties "true"
+property uuid "058e6e48-6ec3-421d-b483-e78452da1f4f"
+package com.ibm.rules.dmn.runtime;
+
+
+public class DateConverter
+{
+    public static ilog.rules.brl.Date fromDayOfWeek(java.time.DayOfWeek date);
+    public static java.util.List fromDayOfWeeks(java.util.List dates domain 0,* class java.time.DayOfWeek) domain 0,* class ilog.rules.brl.Date;
+    public static ilog.rules.brl.Date fromLocalDate(java.time.LocalDate date);
+    public static java.util.List fromLocalDates(java.util.List dates domain 0,* class java.time.LocalDate) domain 0,* class ilog.rules.brl.Date;
+    public static ilog.rules.brl.Date fromLocalTime(java.time.LocalTime date);
+    public static java.util.List fromLocalTimes(java.util.List dates domain 0,* class java.time.LocalTime) domain 0,* class ilog.rules.brl.Date;
+    public static ilog.rules.brl.Date fromMonth(java.time.Month date);
+    public static java.util.List fromMonths(java.util.List dates domain 0,* class java.time.Month) domain 0,* class ilog.rules.brl.Date;
+    public static ilog.rules.brl.Date fromYear(java.time.Year date);
+    public static java.util.List fromYears(java.util.List dates domain 0,* class java.time.Year) domain 0,* class ilog.rules.brl.Date;
+    public static ilog.rules.brl.Date fromZonedDateTime(java.time.ZonedDateTime date);
+    public static java.util.List fromZonedDateTimes(java.util.List dates domain 0,* class java.time.ZonedDateTime) domain 0,* class ilog.rules.brl.Date;
+    public static java.time.DayOfWeek toDayOfWeek(ilog.rules.brl.Date date);
+    public static java.util.List toDayOfWeeks(java.util.List dates domain 0,* class ilog.rules.brl.Date) domain 0,* class java.time.DayOfWeek;
+    public static java.time.LocalDate toLocalDate(ilog.rules.brl.Date date);
+    public static java.util.List toLocalDates(java.util.List dates domain 0,* class ilog.rules.brl.Date) domain 0,* class java.time.LocalDate;
+    public static java.time.LocalTime toLocalTime(ilog.rules.brl.Date date);
+    public static java.util.List toLocalTimes(java.util.List dates domain 0,* class ilog.rules.brl.Date) domain 0,* class java.time.LocalTime;
+    public static java.time.Month toMonth(ilog.rules.brl.Date date);
+    public static java.util.List toMonths(java.util.List dates domain 0,* class ilog.rules.brl.Date) domain 0,* class java.time.Month;
+    public static java.time.Year toYear(ilog.rules.brl.Date date);
+    public static java.util.List toYears(java.util.List dates domain 0,* class ilog.rules.brl.Date) domain 0,* class java.time.Year;
+    public static java.time.ZonedDateTime toZonedDateTime(ilog.rules.brl.Date date);
+    public static java.util.List toZonedDateTimes(java.util.List dates domain 0,* class ilog.rules.brl.Date) domain 0,* class java.time.ZonedDateTime;
+}
+
+package myModel;
+
+
+public final class CustomerStatus
+        extends java.lang.Enum
+        property "dmn.class" "true"
+        property "dmn.vocabulary.label" "Customer Status"
+        property "dmn.xmlType.name" "CustomerStatus"
+{
+    domain {static Bronze, static Silver, static Gold}
+    public static final readonly myModel.CustomerStatus Bronze
+                property "dmn.vocabulary.label" "Bronze"
+                property "dmn.xmlEnumValue.value" "Bronze"
+                property update "true";
+    public static final readonly myModel.CustomerStatus Gold
+                property "dmn.vocabulary.label" "Gold"
+                property "dmn.xmlEnumValue.value" "Gold"
+                property update "true";
+    public static final readonly myModel.CustomerStatus Silver
+                property "dmn.vocabulary.label" "Silver"
+                property "dmn.xmlEnumValue.value" "Silver"
+                property update "true";
+    public static myModel.CustomerStatus valueOf(string arg);
+    public static myModel.CustomerStatus[] values()
+                property "dmn.proposal.weight" "+1";
+}
+
+public final class Dimension
+        extends java.lang.Enum
+        property "dmn.class" "true"
+        property "dmn.vocabulary.label" "Dimension"
+        property "dmn.xmlType.name" "Dimension"
+{
+    domain {static Letter, static Pack1, static Pack2, static Pack3}
+    public static final readonly myModel.Dimension Letter
+                property "dmn.vocabulary.label" "Letter"
+                property "dmn.xmlEnumValue.value" "Letter"
+                property update "true";
+    public static final readonly myModel.Dimension Pack1
+                property "dmn.vocabulary.label" "Pack 1"
+                property "dmn.xmlEnumValue.value" "Pack1"
+                property update "true";
+    public static final readonly myModel.Dimension Pack2
+                property "dmn.vocabulary.label" "Pack 2"
+                property "dmn.xmlEnumValue.value" "Pack2"
+                property update "true";
+    public static final readonly myModel.Dimension Pack3
+                property "dmn.vocabulary.label" "Pack 3"
+                property "dmn.xmlEnumValue.value" "Pack3"
+                property update "true";
+    public static myModel.Dimension valueOf(string arg);
+    public static myModel.Dimension[] values()
+                property "dmn.proposal.weight" "+1";
+}
+
+public final class Pickup
+        extends java.lang.Enum
+        property "dmn.class" "true"
+        property "dmn.vocabulary.label" "Pickup"
+        property "dmn.xmlType.name" "Pickup"
+{
+    domain {static Dropoff, static Pickup}
+    public static final readonly myModel.Pickup Dropoff
+                property "dmn.vocabulary.label" "Dropoff"
+                property "dmn.xmlEnumValue.value" "Dropoff"
+                property update "true";
+    public static final readonly myModel.Pickup Pickup
+                property "dmn.vocabulary.label" "Pickup"
+                property "dmn.xmlEnumValue.value" "Pickup"
+                property update "true";
+    public static myModel.Pickup valueOf(string arg);
+    public static myModel.Pickup[] values()
+                property "dmn.proposal.weight" "+1";
+}
+
+public final class Transport
+        extends java.lang.Enum
+        property "dmn.class" "true"
+        property "dmn.vocabulary.label" "Transport"
+        property "dmn.xmlType.name" "Transport"
+{
+    domain {static Ground, static Air}
+    public static final readonly myModel.Transport Air
+                property "dmn.vocabulary.label" "Air"
+                property "dmn.xmlEnumValue.value" "Air"
+                property update "true";
+    public static final readonly myModel.Transport Ground
+                property "dmn.vocabulary.label" "Ground"
+                property "dmn.xmlEnumValue.value" "Ground"
+                property update "true";
+    public static myModel.Transport valueOf(string arg);
+    public static myModel.Transport[] values()
+                property "dmn.proposal.weight" "+1";
+}
+
+package myModel.odm;
+
+
+public class Method
+        property "dmn.class" "true"
+        property "dmn.vocabulary.label" "Method"
+        property "dmn.xmlType.name" "Method"
+{
+    public java.lang.Boolean nextDay
+                property "dmn.vocabulary.label" "next day"
+                property "dmn.xmlElement.name" "nextDay"
+                property update "true";
+    public myModel.Pickup pickup
+                property "dmn.vocabulary.label" "pickup"
+                property "dmn.xmlElement.name" "pickup"
+                property update "true";
+    public myModel.Transport transport
+                property "dmn.vocabulary.label" "transport"
+                property "dmn.xmlElement.name" "transport"
+                property update "true";
+    public Method(java.lang.Boolean nextDay, myModel.Pickup pickup, myModel.Transport transport)
+                property "argumentAttribute[0]" "nextDay"
+                property "argumentAttribute[1]" "pickup"
+                property "argumentAttribute[2]" "transport"
+                property "dmn.constructor" "true"
+                property groups "Standard"
+                property prototype "true";
+    public Method();
+}
+
+public class Result
+        property "dmn.class" "true"
+        property "dmn.vocabulary.label" "Result"
+        property "dmn.xmlType.name" "Result"
+{
+    public ilog.rules.brl.Time ETA
+                property "dmn.vocabulary.label" "ETA"
+                property "dmn.xmlElement.name" "ETA"
+                property update "true";
+    public java.lang.Double price
+                property "dmn.vocabulary.label" "price"
+                property "dmn.xmlElement.name" "price"
+                property update "true";
+    public Result(ilog.rules.brl.Time ETA, java.lang.Double price)
+                property "argumentAttribute[0]" "ETA"
+                property "argumentAttribute[1]" "price"
+                property "dmn.constructor" "true"
+                property groups "Standard"
+                property prototype "true";
+    public Result();
+}
+
+public class Shipment
+        property "dmn.class" "true"
+        property "dmn.vocabulary.label" "Shipment"
+        property "dmn.xmlType.name" "Shipment"
+{
+    public myModel.Dimension size
+                property "dmn.vocabulary.label" "size"
+                property "dmn.xmlElement.name" "size"
+                property update "true";
+    public java.lang.Double weight
+                property "dmn.vocabulary.label" "weight"
+                property "dmn.xmlElement.name" "weight"
+                property update "true";
+    public Shipment(myModel.Dimension size, java.lang.Double weight)
+                property "argumentAttribute[0]" "size"
+                property "argumentAttribute[1]" "weight"
+                property "dmn.constructor" "true"
+                property groups "Standard"
+                property prototype "true";
+    public Shipment();
+}
+

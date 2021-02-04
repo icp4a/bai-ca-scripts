@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bai-verdi-nlq-operator
+  labels:
+    app.kubernetes.io/instance: master-test
+    app.kubernetes.io/managed-by: helm
+    app.kubernetes.io/name: ibm-business-automation-insights
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: bai-verdi-nlq-operator
+  template:
+    metadata:
+      labels:
+        name: bai-verdi-nlq-operator
+        app.kubernetes.io/component: bai-conversational-assistant
+        app: verdi
+        app.kubernetes.io/instance: master-test
+        app.kubernetes.io/managed-by: helm
+        app.kubernetes.io/name: ibm-business-automation-insights
+      annotations:
+        cloudpakId: 94a9c8c358bb43ba8fbdea62e7e166a5
+        cloudpakName: IBM Cloud Pak for Automation
+        cloudpakVersion: 20.0.3
+        productChargedContainers: ""
+        productCloudpakRatio: "1:1"
+        productID: 11117b07ee53456a9cd41fb6751b0759
+        productMetric: VIRTUAL_PROCESSOR_CORE
+        productName: Business Automation Insights - CP4Auto - Non Prod
+        productVersion: 20.0.3
+    spec:
+      serviceAccountName: bai-verdi-operator
+      containers:
+        - name: bai-verdi-nlq-operator
+          # Replace this with the built image name
+          image: XXXXXXX
+          command:
+          - nlq-operator
+          imagePullPolicy: Always
+          env:
+            - name: WATCH_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: OPERATOR_NAME
+              value: "bai-verdi-nlq-operator"
+          securityContext:
+            capabilities:
+              drop:
+                - all
+      imagePullSecrets:
+      # Replace this with the secret name
+      - name: registry-access-credentials

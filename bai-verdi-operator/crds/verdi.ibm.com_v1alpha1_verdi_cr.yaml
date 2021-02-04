@@ -1,0 +1,29 @@
+apiVersion: verdi.ibm.com/v1alpha1
+kind: Verdi
+metadata:
+  name: bai-verdi-techpreview
+  labels:
+    app.kubernetes.io/instance: master-test
+    app.kubernetes.io/managed-by: helm
+    app.kubernetes.io/name: ibm-business-automation-insights
+spec:
+  # Add fields here
+  size: 1
+  loglevelops : "DEBUG"
+  loglevelbase: "WARNING"
+  loglevelauthutils: "DEBUG"
+  loglevelgetcredentials: "DEBUG"
+  loglevels3selectiondata: "INFO"
+  shows3selectiondata: true
+#   webclientimage: "specific image name"
+#   verdiserverimage: "specific image name"
+#   verdiseederimage: "specific image name"
+  hostname: "dba-icp4a.os.fyre.ibm.com"
+  cp4acrprefix: "bai"
+  registerconfigs: true
+  umsenabled: true
+  imagerepository: "image repo"
+  imagetag: "2003.rc5"
+  imagepullsecretname: "image pull repo credentials"
+  runseederassidecar: true
+  acceptlicense: true 

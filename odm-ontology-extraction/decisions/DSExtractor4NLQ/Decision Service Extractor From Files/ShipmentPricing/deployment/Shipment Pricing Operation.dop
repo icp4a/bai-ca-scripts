@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="Shipment_Pricing" usingRuleflow="true" ruleflowName="Shipment Pricing Ruleflow">
+  <name>Shipment Pricing Operation</name>
+  <uuid>acbe5da6-7e75-4397-89d0-31e28f345378</uuid>
+  <referencedVariables variableName="Price" variableSetName="Price" direction="OUT">
+    <variableSet href="../rules/Shipment%20Pricing%20Variables.var#8bcda6cc-f519-4e4b-8473-7490189c73b7"/>
+  </referencedVariables>
+  <referencedVariables variableName="Shipment" variableSetName="Shipment">
+    <variableSet href="../rules/Shipment%20Pricing%20Variables.var#8bcda6cc-f519-4e4b-8473-7490189c73b7"/>
+  </referencedVariables>
+  <referencedVariables variableName="Customer" variableSetName="Customer">
+    <variableSet href="../rules/Shipment%20Pricing%20Variables.var#8bcda6cc-f519-4e4b-8473-7490189c73b7"/>
+  </referencedVariables>
+  <referencedVariables variableName="Method" variableSetName="Method">
+    <variableSet href="../rules/Shipment%20Pricing%20Variables.var#8bcda6cc-f519-4e4b-8473-7490189c73b7"/>
+  </referencedVariables>
+  <referencedVariables variableName="Distance" variableSetName="Distance">
+    <variableSet href="../rules/Shipment%20Pricing%20Variables.var#8bcda6cc-f519-4e4b-8473-7490189c73b7"/>
+  </referencedVariables>
+  <ruleflow href="../rules/Shipment%20Pricing%20Ruleflow.rfl#ae868340-cba2-4a5c-be39-a034b29ba623"/>
+  <targetRuleProject href="../../Shipment%20Pricing#c6d49e21-04c4-4dfa-a55d-8f7591aa232f"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

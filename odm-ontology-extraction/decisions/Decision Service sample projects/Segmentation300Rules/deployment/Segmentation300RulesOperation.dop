@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="Segmentation300RulesRuleset" usingRuleflow="true" ruleflowName="seq flow" targetRuleProjectName="Segmentation300Rules">
+  <name>Segmentation300RulesOperation</name>
+  <uuid>2cd21b22-e256-4a64-a0f5-da2fc73bb8ae</uuid>
+  <referencedVariables variableName="consumer" variableSetName="Segmentation300RulesParameters" direction="IN_OUT">
+    <variableSet href="../rules/Segmentation300RulesParameters.var#be41c38d-2874-42d0-b5cb-f2ff49b5fb68"/>
+  </referencedVariables>
+  <referencedVariables variableName="client" variableSetName="Segmentation300RulesParameters" direction="IN_OUT">
+    <variableSet href="../rules/Segmentation300RulesParameters.var#be41c38d-2874-42d0-b5cb-f2ff49b5fb68"/>
+  </referencedVariables>
+  <referencedVariables variableName="campaign" variableSetName="Segmentation300RulesParameters" direction="IN_OUT">
+    <variableSet href="../rules/Segmentation300RulesParameters.var#be41c38d-2874-42d0-b5cb-f2ff49b5fb68"/>
+  </referencedVariables>
+  <ruleflow href="../rules/seq%20flow.rfl#65cd4447-ab15-4189-be2c-e017905594b9"/>
+  <targetRuleProject href="../../Segmentation300Rules#78d6e1a8-190d-4cdd-be1a-17a62c547469"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

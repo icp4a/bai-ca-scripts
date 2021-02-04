@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY wcsnlq "http://watson.ibm.com/project/WCS/NLQ" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY NLQ "http://watson.ibm.com/project/WCS/NLQ#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY index "http://watson.ibm.com/project/WCS/NLQ/index#" >
+    <!ENTITY watsonDT "http://watson.ibm.com/project/Tatzia/DataTypes#" >
+]>
+
+
+<rdf:RDF xmlns="http://watson.ibm.com/project/Tatzia/FSS#"
+     xml:base="http://watson.ibm.com/project/Tatzia/FSS"
+     xmlns:NLQ="&wcsnlq;#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wcsnlq="http://watson.ibm.com/project/WCS/NLQ"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:index="&wcsnlq;/index#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:watsonDT="http://watson.ibm.com/project/Tatzia/DataTypes#">
+    <owl:Ontology rdf:about="http://watson.ibm.com/project/Tatzia/FSS">
+        <rdfs:label>Financial Insighs Ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="&xsd;decimal">1.0</owl:versionInfo>
+        <rdfs:comment>Based on the FSS ontology.  Simplified for Insights API and WCS flow.</rdfs:comment>
+        <owl:priorVersion rdf:resource="http://watson.ibm.com/project/Tatzia/FSS1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://watson.ibm.com/project/WCS/NLQ#alias -->
+
+    <owl:AnnotationProperty rdf:about="&wcsnlq;#alias">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://watson.ibm.com/project/WCS/NLQ#defaultgroupby -->
+
+    <owl:AnnotationProperty rdf:about="&wcsnlq;#defaultgroupby">
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://watson.ibm.com/project/WCS/NLQ#defaultmeasure -->
+
+    <owl:AnnotationProperty rdf:about="&wcsnlq;#defaultmeasure">
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://watson.ibm.com/project/WCS/NLQ#defaulttime -->
+
+    <owl:AnnotationProperty rdf:about="&wcsnlq;#defaulttime">
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://watson.ibm.com/project/WCS/NLQ#index -->
+
+    <owl:AnnotationProperty rdf:about="&wcsnlq;#index"/>
+    
+
+
+    <!-- http://watson.ibm.com/project/WCS/NLQ#key -->
+
+    <owl:AnnotationProperty rdf:about="&wcsnlq;#key"/>
+    
+
+
+    <!-- http://watson.ibm.com/project/WCS/NLQ#unionmap -->
+
+    <owl:AnnotationProperty rdf:about="&wcsnlq;#unionmap"/>
+    
+
+
+    <!-- http://watson.ibm.com/project/WCS/NLQ/index#semantictype -->
+
+    <owl:AnnotationProperty rdf:about="&wcsnlq;/index#semantictype"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#length -->
+
+    <owl:AnnotationProperty rdf:about="&xsd;length"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="&xsd;date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+<owl:ObjectProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#in_borrower">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+<rdfs:range rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/in"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#in_loanrequest">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest"/>
+<rdfs:range rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/in"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#report_loanrequest">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest"/>
+<rdfs:range rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#report_borrower">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+<rdfs:range rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#borrower_borrower">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+<rdfs:range rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#borrower_ssn">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn"/>
+<rdfs:range rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#out_report">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+<rdfs:range rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/out"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/mydeployment#data_mydeployment">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/mydeployment"/>
+<rdfs:range rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/data"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/LoanValidation_ServiceRuleset#mydeployment_LoanValidation_ServiceRuleset">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/LoanValidation_ServiceRuleset"/>
+<rdfs:range rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/mydeployment"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/in#LoanValidation_ServiceRuleset_in">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/in"/>
+<rdfs:range rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/LoanValidation_ServiceRuleset"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/out#LoanValidation_ServiceRuleset_out">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/out"/>
+<rdfs:range rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/LoanValidation_ServiceRuleset"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#insurance">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>insurance |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#approved">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+	<rdfs:range rdf:resource="&xsd;boolean"/>
+	<rdf:description>approved |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#monthlyRepayment">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>monthlyRepayment |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#insuranceRate">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>insuranceRate |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#messages">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>messages |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#validData">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+	<rdfs:range rdf:resource="&xsd;boolean"/>
+	<rdf:description>validData |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#yearlyInterestRate">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>yearlyInterestRate |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#message">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>message |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#yearlyRepayment">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>yearlyRepayment |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#insuranceRequired">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/report"/>
+	<rdfs:range rdf:resource="&xsd;boolean"/>
+	<rdf:description>insuranceRequired |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#lastName">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>lastName |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#firstName">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>firstName |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#zipCode">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>zipCode |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#creditScore">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>creditScore |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#latestBankruptcyChapter">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>latestBankruptcyChapter |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#latestBankruptcyReason">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>latestBankruptcyReason |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#SSNCode">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>SSNCode |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#yearlyIncome">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>yearlyIncome |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#birthDate">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+	<rdfs:range rdf:resource="&xsd;date"/>
+	<rdf:description>birthDate |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#age">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>age |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#latestBankruptcyDate">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower"/>
+	<rdfs:range rdf:resource="&xsd;date"/>
+	<rdf:description>latestBankruptcyDate |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy#date">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy"/>
+	<rdfs:range rdf:resource="&xsd;date"/>
+	<rdf:description>date |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy#reason">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>reason |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy#chapter">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>chapter |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#duration">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>duration |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#amount">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>amount |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#loanToValue">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>loanToValue |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#numberOfMonthlyPayments">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>numberOfMonthlyPayments |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#startDate">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest"/>
+	<rdfs:range rdf:resource="&xsd;date"/>
+	<rdf:description>startDate |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#serialNumber">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>serialNumber |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#areaNumber">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>areaNumber |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#digits">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn"/>
+	<rdfs:range rdf:resource="&xsd;double"/>
+	<rdf:description>digits |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#fullNumber">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>fullNumber |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#groupCode">
+	<rdfs:domain rdf:resource="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn"/>
+	<rdfs:range rdf:resource="&xsd;string"/>
+	<rdf:description>groupCode |</rdf:description>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/data">
+	<rdfs:label>data</rdfs:label>
+	<rdf:description>data |</rdf:description>
+</owl:Class>
+
+<owl:Class rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/in">
+	<rdfs:label>in</rdfs:label>
+	<rdf:description>in |</rdf:description>
+</owl:Class>
+
+<owl:Class rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/mydeployment">
+	<rdfs:label>mydeployment</rdfs:label>
+	<rdf:description>mydeployment |</rdf:description>
+</owl:Class>
+
+<owl:Class rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/report">
+	<rdfs:label>report</rdfs:label>
+	<rdf:description>report | reports | report | reports |</rdf:description>
+</owl:Class>
+
+<owl:Class rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower">
+	<rdfs:label>borrower</rdfs:label>
+	<rdf:description>borrower | borrowers | borrower | borrowers |</rdf:description>
+</owl:Class>
+
+<owl:Class rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/LoanValidation_ServiceRuleset">
+	<rdfs:label>LoanValidation_ServiceRuleset</rdfs:label>
+	<rdf:description>LoanValidation_ServiceRuleset |</rdf:description>
+</owl:Class>
+
+<owl:Class rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy">
+	<rdfs:label>bankruptcy</rdfs:label>
+	<rdf:description>bankruptcy | bankruptcies | bankruptcy | bankruptcies |</rdf:description>
+</owl:Class>
+
+<owl:Class rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest">
+	<rdfs:label>loanrequest</rdfs:label>
+	<rdf:description>loanrequest | loan | loans | loanrequest | loan | loans | loanrequest | loan | loans |</rdf:description>
+</owl:Class>
+
+<owl:Class rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn">
+	<rdfs:label>ssn</rdfs:label>
+	<rdf:description>ssn | SSN | SSNs | ssn | SSN | SSNs | ssn | SSN | SSNs |</rdf:description>
+</owl:Class>
+
+<owl:Class rdf:about="http://watson.ibm.com/project/Tatzia/odm-timeseries/out">
+	<rdfs:label>out</rdfs:label>
+	<rdf:description>out |</rdf:description>
+</owl:Class>
+
+
+</rdf:RDF>
