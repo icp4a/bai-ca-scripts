@@ -1,0 +1,55 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/Miniloan Service/miniloan-xom"
+property uuid "d3f41bc5-5c35-4232-aa7b-23ae87e16477"
+package miniloan;
+
+
+public class Borrower
+{
+    public int creditScore;
+    public readonly string name;
+    public int yearlyIncome;
+    public Borrower(string name, int creditScore, int yearlyIncome)
+                property "ilog.rules.engine.dataio.forConversion" "true";
+    public Borrower();
+}
+
+public class Loan
+        property "dataio.default" "true"
+        property "ilog.rules.engine.dataio.forConversion" "true"
+{
+    public int amount;
+    public readonly string approvalStatus
+                property "factory.ignore" "true";
+    public boolean approved
+                property "factory.ignore" "true";
+    public string description;
+    public int duration;
+    public miniloan.LoanType loanType;
+    public readonly java.util.Collection messages domain 0,* class string;
+    public double yearlyInterestRate;
+    public readonly int yearlyRepayment;
+    public Loan(int amount, int duration, double yearlyInterestRate)
+                property "dataio.default" "true"
+                property "ilog.rules.engine.dataio.forConversion" "true";
+    public Loan(int amount, int duration, double yearlyInterestRate, miniloan.LoanType loanType)
+                property "dataio.default" "true";
+    public Loan();
+    public void addToMessages(string arg);
+    public void reject();
+    public void removeFromMessages(string arg);
+}
+
+public final class LoanType
+        extends java.lang.Enum
+{
+    domain {static MORTGAGE, static STUDENT, static CAR, static PERSONAL}
+    public static final readonly miniloan.LoanType CAR;
+    public static final readonly miniloan.LoanType MORTGAGE;
+    public static final readonly miniloan.LoanType PERSONAL;
+    public static final readonly miniloan.LoanType STUDENT;
+    public static miniloan.LoanType valueOf(string arg);
+    public static miniloan.LoanType[] values();
+}
+

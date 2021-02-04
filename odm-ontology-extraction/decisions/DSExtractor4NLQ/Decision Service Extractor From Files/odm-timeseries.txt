@@ -1,0 +1,102 @@
+concepts:
+data:
+in:
+mydeployment:
+report:insuranceRate(DOUBLE),yearlyInterestRate(DOUBLE),validData(BOOLEAN),insuranceRequired(BOOLEAN),insurance(STRING),monthlyRepayment(DOUBLE),yearlyRepayment(DOUBLE),approved(BOOLEAN),message(STRING),messages(STRING)
+borrower:yearlyIncome(int),creditScore(int),latestBankruptcyChapter(int),birthDate(DATE),latestBankruptcyReason(STRING),lastName(STRING),firstName(STRING),zipCode(STRING),age(int),latestBankruptcyDate(DATE),SSNCode(STRING)
+LoanValidation_ServiceRuleset:
+bankruptcy:reason(STRING),chapter(int),date(DATE)
+loanrequest:loanToValue(DOUBLE),amount(int),numberOfMonthlyPayments(int),duration(int),startDate(DATE)
+ssn:fullNumber(STRING),groupCode(STRING),digits(int),serialNumber(STRING),areaNumber(STRING)
+out:
+relations:
+functional:in:borrower:1:1:in_borrower
+functional:in:loanrequest:1:1:in_loanrequest
+functional:report:loanrequest:1:1:report_loanrequest
+functional:report:borrower:1:1:report_borrower
+functional:borrower:borrower:1:1:borrower_borrower
+functional:borrower:ssn:1:1:borrower_ssn
+functional:out:report:1:1:out_report
+functional:data:mydeployment:1:1:data_mydeployment
+functional:mydeployment:LoanValidation_ServiceRuleset:1:1:mydeployment_LoanValidation_ServiceRuleset
+functional:LoanValidation_ServiceRuleset:in:1:1:LoanValidation_ServiceRuleset_in
+functional:LoanValidation_ServiceRuleset:out:1:1:LoanValidation_ServiceRuleset_out
+synonyms:
+data: data | 
+in: in | 
+loanrequest: loanrequest | loan | loans | loanrequest | loan | loans | loanrequest | loan | loans | 
+loanrequest.amount: amount | amounts | the amount | an amount | the amounts... | 
+loanrequest.startDate: startDate | start date | start dates | the start date | a start date | the start dates... | 
+loanrequest.duration: duration | durations | the duration | a duration | the durations... | 
+loanrequest.loanToValue: loanToValue | Loan to Value | Loan to Values | the Loan to Value | a Loan to Value | the Loan to Values... | 
+loanrequest.numberOfMonthlyPayments: numberOfMonthlyPayments | number of monthly payments | number of monthly paymentses | the number of monthly payments | a number of monthly payments | the number of monthly paymentses... | 
+loanrequest.amount: amount | 
+loanrequest.startDate: startDate | 
+loanrequest.duration: duration | 
+loanrequest.numberOfMonthlyPayments: numberOfMonthlyPayments | 
+loanrequest.loanToValue: loanToValue | 
+borrower: borrower | borrowers | borrower | borrowers | 
+borrower.latestBankruptcyChapter: latestBankruptcyChapter | latest bankruptcy chapter | latest bankruptcy chapters | the latest bankruptcy chapter | a latest bankruptcy chapter | the latest bankruptcy chapters... | 
+borrower.creditScore: creditScore | credit score | credit scores | the credit score | a credit score | the credit scores... | 
+borrower.latestBankruptcyReason: latestBankruptcyReason | latest bankruptcy reason | latest bankruptcy reasons | the latest bankruptcy reason | a latest bankruptcy reason | the latest bankruptcy reasons... | 
+borrower.lastName: lastName | last name | last names | the last name | a last name | the last names... | 
+borrower.SSNCode: SSNCode | SSNCodes | the SSNCode | a SSNCode | the SSNCodes... | 
+borrower.latestBankruptcyDate: latestBankruptcyDate | latest bankruptcy date | latest bankruptcy dates | the latest bankruptcy date | a latest bankruptcy date | the latest bankruptcy dates... | 
+borrower.birthDate: birthDate | birth date | birth dates | the birth date | a birth date | the birth dates... | 
+borrower.firstName: firstName | first name | first names | the first name | a first name | the first names... | 
+borrower.age: age | ages | the age | an age | the ages... | 
+borrower.zipCode: zipCode | zip code | zip codes | the zip code | a zip code | the zip codes... | 
+borrower.yearlyIncome: yearlyIncome | yearly income | yearly incomes | the yearly income | a yearly income | the yearly incomes... | 
+borrower.latestBankruptcyChapter: latestBankruptcyChapter | 
+borrower.creditScore: creditScore | 
+borrower.firstName: firstName | 
+borrower.age: age | 
+borrower.zipCode: zipCode | 
+borrower.yearlyIncome: yearlyIncome | 
+borrower.latestBankruptcyReason: latestBankruptcyReason | 
+borrower.lastName: lastName | 
+borrower.SSNCode: SSNCode | 
+borrower.latestBankruptcyDate: latestBankruptcyDate | 
+borrower.birthDate: birthDate | 
+report: report | reports | report | reports | 
+report.yearlyRepayment: yearlyRepayment | yearly repayment | yearly repayments | the yearly repayment | a yearly repayment | the yearly repayments... | 
+report.insurance: insurance | insurances | the insurance | an insurance | the insurances... | 
+report.insuranceRequired: insuranceRequired | insurance required | insurance requireds | the insurance required | an insurance required | the insurance requireds... | 
+report.validData: validData | valid data | valid datas | the valid data | a valid data | the valid datas... | 
+report.approved: approved | approveds | the approved | an approved | the approveds... | 
+report.yearlyInterestRate: yearlyInterestRate | yearly interest rate | yearly interest rates | the yearly interest rate | a yearly interest rate | the yearly interest rates... | 
+report.monthlyRepayment: monthlyRepayment | monthly repayment | monthly repayments | the monthly repayment | a monthly repayment | the monthly repayments... | 
+report.insuranceRate: insuranceRate | insurance rate | insurance rates | the insurance rate | an insurance rate | the insurance rates... | 
+report.message: message | messages | the message | a message | the messages... | 
+report.messages: messages | message | the message | a message | the messages... | 
+report.insurance: insurance | 
+report.insuranceRequired: insuranceRequired | 
+report.approved: approved | 
+report.yearlyInterestRate: yearlyInterestRate | 
+report.yearlyRepayment: yearlyRepayment | 
+report.validData: validData | 
+report.monthlyRepayment: monthlyRepayment | 
+report.insuranceRate: insuranceRate | 
+report.message: message | 
+report.messages: messages | 
+mydeployment: mydeployment | 
+LoanValidation_ServiceRuleset: LoanValidation_ServiceRuleset | 
+bankruptcy: bankruptcy | bankruptcies | bankruptcy | bankruptcies | 
+bankruptcy.reason: reason | reasons | the reason | a reason | the reasons... | 
+bankruptcy.date: date | dates | the date | a date | the dates... | 
+bankruptcy.chapter: chapter | chapters | the chapter | a chapter | the chapters... | 
+bankruptcy.reason: reason | 
+bankruptcy.date: date | 
+bankruptcy.chapter: chapter | 
+ssn: ssn | SSN | SSNs | ssn | SSN | SSNs | ssn | SSN | SSNs | 
+ssn.serialNumber: serialNumber | serial number | serial numbers | the serial number | a serial number | the serial numbers... | 
+ssn.areaNumber: areaNumber | area number | area numbers | the area number | an area number | the area numbers... | 
+ssn.digits: digits | number of digits | numbers of digits | the number of digits | a number of digits | the numbers of digits... | 
+ssn.fullNumber: fullNumber | full number | full numbers | the full number | a full number | the full numbers... | 
+ssn.groupCode: groupCode | group code | group codes | the group code | a group code | the group codes... | 
+ssn.digits: digits | 
+ssn.fullNumber: fullNumber | 
+ssn.serialNumber: serialNumber | 
+ssn.areaNumber: areaNumber | 
+ssn.groupCode: groupCode | 
+out: out | 

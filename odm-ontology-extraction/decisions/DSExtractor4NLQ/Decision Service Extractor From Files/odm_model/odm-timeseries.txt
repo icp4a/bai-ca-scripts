@@ -1,0 +1,70 @@
+concepts:
+loan:amount(int),startDate(DATE),loanToValue(DOUBLE),duration(int),numberOfMonthlyPayments(int)
+test_deployment:
+data:
+in:
+report:insuranceRate(DOUBLE),yearlyInterestRate(DOUBLE),validData(BOOLEAN),insuranceRequired(BOOLEAN),insurance(STRING),monthlyRepayment(DOUBLE),yearlyRepayment(DOUBLE),approved(BOOLEAN),message(STRING),messages(STRING)
+borrower:yearlyIncome(int),creditScore(int),latestBankruptcyChapter(int),birthDate(DATE),latestBankruptcyReason(STRING),lastName(STRING),firstName(STRING),ssncode(STRING),zipCode(STRING),age(int),latestBankruptcyDate(DATE)
+loan_validation_with_score_and_grade:
+bankruptcy:reason(STRING),chapter(int),date(DATE)
+ssn:fullNumber(STRING),groupCode(STRING),digits(int),serialNumber(STRING),areaNumber(STRING)
+out:score(BIGINT),grade(STRING)
+relations:
+functional:in:borrower:1:1:in_borrower
+functional:in:loan:1:1:in_loan
+functional:report:loan:1:1:report_loan
+functional:report:borrower:1:1:report_borrower
+functional:borrower:borrower:1:1:borrower_borrower
+functional:borrower:ssn:1:1:borrower_ssn
+functional:out:report:1:1:out_report
+functional:data:test_deployment:1:1:data_test_deployment
+functional:test_deployment:loan_validation_with_score_and_grade:1:1:test_deployment_loan_validation_with_score_and_grade
+functional:loan_validation_with_score_and_grade:in:1:1:loan_validation_with_score_and_grade_in
+functional:loan_validation_with_score_and_grade:out:1:1:loan_validation_with_score_and_grade_out
+synonyms:
+data: data | 
+in: in | 
+loan_validation_with_score_and_grade: loan_validation_with_score_and_grade | 
+test_deployment: test_deployment | 
+loan: loan | loans | loan | loans | 
+loan.duration: duration | durations | the duration | a duration | the durations... | 
+loan.numberOfMonthlyPayments: numberOfMonthlyPayments | number of monthly payments | number of monthly paymentses | the number of monthly payments | a number of monthly payments | the number of monthly paymentses... | 
+loan.loanToValue: loanToValue | Loan to Value | Loan to Values | the Loan to Value | a Loan to Value | the Loan to Values... | 
+loan.amount: amount | amounts | the amount | an amount | the amounts... | 
+loan.startDate: startDate | start date | start dates | the start date | a start date | the start dates... | 
+borrower: borrower | borrowers | borrower | borrowers | 
+borrower.ssncode: ssncode | ssncodes | the ssncode | a ssncode | the ssncodes... | 
+borrower.latestBankruptcyChapter: latestBankruptcyChapter | latest bankruptcy chapter | latest bankruptcy chapters | the latest bankruptcy chapter | a latest bankruptcy chapter | the latest bankruptcy chapters... | 
+borrower.creditScore: creditScore | credit score | credit scores | the credit score | a credit score | the credit scores... | 
+borrower.latestBankruptcyReason: latestBankruptcyReason | latest bankruptcy reason | latest bankruptcy reasons | the latest bankruptcy reason | a latest bankruptcy reason | the latest bankruptcy reasons... | 
+borrower.lastName: lastName | last name | last names | the last name | a last name | the last names... | 
+borrower.latestBankruptcyDate: latestBankruptcyDate | latest bankruptcy date | latest bankruptcy dates | the latest bankruptcy date | a latest bankruptcy date | the latest bankruptcy dates... | 
+borrower.birthDate: birthDate | birth date | birth dates | the birth date | a birth date | the birth dates... | 
+borrower.firstName: firstName | first name | first names | the first name | a first name | the first names... | 
+borrower.age: age | ages | the age | an age | the ages... | 
+borrower.zipCode: zipCode | zip code | zip codes | the zip code | a zip code | the zip codes... | 
+borrower.yearlyIncome: yearlyIncome | yearly income | yearly incomes | the yearly income | a yearly income | the yearly incomes... | 
+report: report | reports | report | reports | 
+report.yearlyRepayment: yearlyRepayment | yearly repayment | yearly repayments | the yearly repayment | a yearly repayment | the yearly repayments... | 
+report.insurance: insurance | insurances | the insurance | an insurance | the insurances... | 
+report.insuranceRequired: insuranceRequired | insurance required | insurance requireds | the insurance required | an insurance required | the insurance requireds... | 
+report.validData: validData | valid data | valid datas | the valid data | a valid data | the valid datas... | 
+report.approved: approved | approveds | the approved | an approved | the approveds... | 
+report.yearlyInterestRate: yearlyInterestRate | yearly interest rate | yearly interest rates | the yearly interest rate | a yearly interest rate | the yearly interest rates... | 
+report.monthlyRepayment: monthlyRepayment | monthly repayment | monthly repayments | the monthly repayment | a monthly repayment | the monthly repayments... | 
+report.insuranceRate: insuranceRate | insurance rate | insurance rates | the insurance rate | an insurance rate | the insurance rates... | 
+report.message: message | messages | the message | a message | the messages... | 
+report.messages: messages | message | the message | a message | the messages... | 
+bankruptcy: bankruptcy | bankruptcies | bankruptcy | bankruptcies | 
+bankruptcy.reason: reason | reasons | the reason | a reason | the reasons... | 
+bankruptcy.date: date | dates | the date | a date | the dates... | 
+bankruptcy.chapter: chapter | chapters | the chapter | a chapter | the chapters... | 
+ssn: ssn | SSN | SSNs | ssn | SSN | SSNs | ssn | SSN | SSNs | 
+ssn.serialNumber: serialNumber | serial number | serial numbers | the serial number | a serial number | the serial numbers... | 
+ssn.areaNumber: areaNumber | area number | area numbers | the area number | an area number | the area numbers... | 
+ssn.digits: digits | number of digits | numbers of digits | the number of digits | a number of digits | the numbers of digits... | 
+ssn.fullNumber: fullNumber | full number | full numbers | the full number | a full number | the full numbers... | 
+ssn.groupCode: groupCode | group code | group codes | the group code | a group code | the group codes... | 
+out: out | 
+out.score: score | 
+out.grade: grade | 

@@ -1,0 +1,108 @@
+uuid = ef1e13dd-875f-4c6e-922a-0b969ab8226b
+
+# myModel.CustomerStatus
+myModel.CustomerStatus#concept.dmn.class = true
+myModel.CustomerStatus#concept.dmn.vocabulary.label = Customer Status
+myModel.CustomerStatus#concept.dmn.xmlType.name = CustomerStatus
+myModel.CustomerStatus#concept.label = Customer Status
+myModel.CustomerStatus.Bronze#instance.dmn.vocabulary.label = Bronze
+myModel.CustomerStatus.Bronze#instance.dmn.xmlEnumValue.value = Bronze
+myModel.CustomerStatus.Bronze#instance.label = Bronze
+myModel.CustomerStatus.Bronze#instance.update = true
+myModel.CustomerStatus.Gold#instance.dmn.vocabulary.label = Gold
+myModel.CustomerStatus.Gold#instance.dmn.xmlEnumValue.value = Gold
+myModel.CustomerStatus.Gold#instance.label = Gold
+myModel.CustomerStatus.Gold#instance.update = true
+myModel.CustomerStatus.Silver#instance.dmn.vocabulary.label = Silver
+myModel.CustomerStatus.Silver#instance.dmn.xmlEnumValue.value = Silver
+myModel.CustomerStatus.Silver#instance.label = Silver
+myModel.CustomerStatus.Silver#instance.update = true
+myModel.CustomerStatus.values()#phrase.navigation = all Customer Status values
+
+# myModel.Dimension
+myModel.Dimension#concept.dmn.class = true
+myModel.Dimension#concept.dmn.vocabulary.label = Dimension
+myModel.Dimension#concept.dmn.xmlType.name = Dimension
+myModel.Dimension#concept.label = Dimension
+myModel.Dimension.Letter#instance.dmn.vocabulary.label = Letter
+myModel.Dimension.Letter#instance.dmn.xmlEnumValue.value = Letter
+myModel.Dimension.Letter#instance.label = Letter
+myModel.Dimension.Letter#instance.update = true
+myModel.Dimension.Pack1#instance.dmn.vocabulary.label = Pack 1
+myModel.Dimension.Pack1#instance.dmn.xmlEnumValue.value = Pack1
+myModel.Dimension.Pack1#instance.label = Pack 1
+myModel.Dimension.Pack1#instance.update = true
+myModel.Dimension.Pack2#instance.dmn.vocabulary.label = Pack 2
+myModel.Dimension.Pack2#instance.dmn.xmlEnumValue.value = Pack2
+myModel.Dimension.Pack2#instance.label = Pack 2
+myModel.Dimension.Pack2#instance.update = true
+myModel.Dimension.Pack3#instance.dmn.vocabulary.label = Pack 3
+myModel.Dimension.Pack3#instance.dmn.xmlEnumValue.value = Pack3
+myModel.Dimension.Pack3#instance.label = Pack 3
+myModel.Dimension.Pack3#instance.update = true
+myModel.Dimension.values()#phrase.navigation = all Dimension values
+
+# myModel.Pickup
+myModel.Pickup#concept.dmn.class = true
+myModel.Pickup#concept.dmn.vocabulary.label = Pickup
+myModel.Pickup#concept.dmn.xmlType.name = Pickup
+myModel.Pickup#concept.label = Pickup
+myModel.Pickup.Dropoff#instance.dmn.vocabulary.label = Dropoff
+myModel.Pickup.Dropoff#instance.dmn.xmlEnumValue.value = Dropoff
+myModel.Pickup.Dropoff#instance.label = Dropoff
+myModel.Pickup.Dropoff#instance.update = true
+myModel.Pickup.Pickup#instance.dmn.vocabulary.label = Pickup
+myModel.Pickup.Pickup#instance.dmn.xmlEnumValue.value = Pickup
+myModel.Pickup.Pickup#instance.label = Pickup
+myModel.Pickup.Pickup#instance.update = true
+myModel.Pickup.values()#phrase.navigation = all Pickup values
+
+# myModel.Transport
+myModel.Transport#concept.dmn.class = true
+myModel.Transport#concept.dmn.vocabulary.label = Transport
+myModel.Transport#concept.dmn.xmlType.name = Transport
+myModel.Transport#concept.label = Transport
+myModel.Transport.Air#instance.dmn.vocabulary.label = Air
+myModel.Transport.Air#instance.dmn.xmlEnumValue.value = Air
+myModel.Transport.Air#instance.label = Air
+myModel.Transport.Air#instance.update = true
+myModel.Transport.Ground#instance.dmn.vocabulary.label = Ground
+myModel.Transport.Ground#instance.dmn.xmlEnumValue.value = Ground
+myModel.Transport.Ground#instance.label = Ground
+myModel.Transport.Ground#instance.update = true
+myModel.Transport.values()#phrase.navigation = all Transport values
+
+# myModel.odm.Method
+myModel.odm.Method#concept.dmn.class = true
+myModel.odm.Method#concept.dmn.vocabulary.label = Method
+myModel.odm.Method#concept.dmn.xmlType.name = Method
+myModel.odm.Method#concept.label = Method
+myModel.odm.Method.Method(java.lang.Boolean,myModel.Pickup,myModel.Transport)#phrase.navigation = a new {Method} where {0, next day} {1, pickup} {2, transport} 
+myModel.odm.Method.nextDay#phrase.action = make it {next day} that {this} is next day
+myModel.odm.Method.nextDay#phrase.navigation = {this} is next day
+myModel.odm.Method.pickup#phrase.action = set the pickup of {this} to {pickup}
+myModel.odm.Method.pickup#phrase.navigation = {pickup} of {this}
+myModel.odm.Method.transport#phrase.action = set the transport of {this} to {transport}
+myModel.odm.Method.transport#phrase.navigation = {transport} of {this}
+
+# myModel.odm.Result
+myModel.odm.Result#concept.dmn.class = true
+myModel.odm.Result#concept.dmn.vocabulary.label = Result
+myModel.odm.Result#concept.dmn.xmlType.name = Result
+myModel.odm.Result#concept.label = Result
+myModel.odm.Result.ETA#phrase.action = set the ETA of {this} to {ETA}
+myModel.odm.Result.ETA#phrase.navigation = {ETA} of {this}
+myModel.odm.Result.Result(ilog.rules.brl.Time,java.lang.Double)#phrase.navigation = a new {Result} where {0, ETA} {1, price} 
+myModel.odm.Result.price#phrase.action = set the price of {this} to {price}
+myModel.odm.Result.price#phrase.navigation = {price} of {this}
+
+# myModel.odm.Shipment
+myModel.odm.Shipment#concept.dmn.class = true
+myModel.odm.Shipment#concept.dmn.vocabulary.label = Shipment
+myModel.odm.Shipment#concept.dmn.xmlType.name = Shipment
+myModel.odm.Shipment#concept.label = Shipment
+myModel.odm.Shipment.Shipment(myModel.Dimension,java.lang.Double)#phrase.navigation = a new {Shipment} where {0, size} {1, weight} 
+myModel.odm.Shipment.size#phrase.action = set the size of {this} to {size}
+myModel.odm.Shipment.size#phrase.navigation = {size} of {this}
+myModel.odm.Shipment.weight#phrase.action = set the weight of {this} to {weight}
+myModel.odm.Shipment.weight#phrase.navigation = {weight} of {this}

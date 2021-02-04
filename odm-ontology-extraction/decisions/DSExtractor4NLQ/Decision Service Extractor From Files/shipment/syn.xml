@@ -1,0 +1,32 @@
+<synonyms>
+<concept id="http://watson.ibm.com/project/Tatzia/shipmentPricing/in">
+<alias>in</alias>
+	<property id="http://watson.ibm.com/project/Tatzia/shipmentPricing/in#Distance">
+	<alias>Distance</alias>
+	</property>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/shipmentPricing/out">
+<alias>out</alias>
+	<property id="http://watson.ibm.com/project/Tatzia/shipmentPricing/out#Price">
+	<alias>Price</alias>
+	</property>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/shipmentPricing/Shipment_Pricing_RuleApp">
+<alias>Shipment_Pricing_RuleApp</alias>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/customerstatus">
+<alias>customerstatus</alias>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/method">
+<alias>method</alias>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/shipmentPricing/Shipment_Pricing">
+<alias>Shipment_Pricing</alias>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/shipment">
+<alias>shipment</alias>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/shipmentPricing/data">
+<alias>data</alias>
+</concept>
+</synonyms>

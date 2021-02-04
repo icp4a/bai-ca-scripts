@@ -1,0 +1,874 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://dba.ibm.com/project/enhanced/1.0#"
+     xml:base="http://dba.ibm.com/project/enhanced/1.0"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdfs1="#rdfs:">
+    <owl:Ontology rdf:about="http://dba.ibm.com/project/enhanced/1.0"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- #rdfs:description -->
+
+
+    <owl:AnnotationProperty rdf:about="#rdfs:description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Process_Data -->
+
+
+    <owl:ObjectProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Process_Data">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Applicant_location -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Applicant_location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs1:description>The office location of the applicant (from where they will fly out)</rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Applicant_name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Applicant_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Director_approval -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Director_approval">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Director_feedback -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Director_feedback">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Director_name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Director_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Director_rejection -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Director_rejection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Director_send_back -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Director_send_back">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#End_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#End_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs1:description>Last date of travel</rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Event -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Event">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs1:description>Conference, course, workshop... that will be attended during travel</rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Event_location -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Event_location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs1:description>The destination of the applicant&apos;s travel request where the event will be held.</rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Justification -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Justification">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs1:description>Reason for travel</rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Manager_approval -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Manager_approval">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Manager_feedback -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Manager_feedback">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Manager_name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Manager_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Manager_rejection -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Manager_rejection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Manager_send_back -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Manager_send_back">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Papers_list -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Papers_list">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs1:description>List the papers that have been accepted at the conference (if the event 
+is a conference or workshop...). Separate papers with semi-colon.</rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Requested_amount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Requested_amount">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Send_back_applicant -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Send_back_applicant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs1:description></rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Start_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#Start_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs1:description>First date of travel</rdfs1:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#activityId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#activityId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#activityVersionId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#activityVersionId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#atRiskDateAssignedTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#atRiskDateAssignedTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#autoTrackingName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#autoTrackingName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#bpmCellName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#bpmCellName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#bpmSystemId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#bpmSystemId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#claimedTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#claimedTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#completedTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#completedTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#deletedTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#deletedTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#dueDateAssignedTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#dueDateAssignedTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#duration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#failedTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#failedTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#lastBusinessDataUpdateActivity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#lastBusinessDataUpdateActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#lastBusinessDataUpdateEvent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#lastBusinessDataUpdateEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#lastBusinessDataUpdatePerformer -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#lastBusinessDataUpdatePerformer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#lastBusinessDataUpdateTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#lastBusinessDataUpdateTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#migratedTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#migratedTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#performerId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#performerId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#performerName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#performerName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#potentialPerformerId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#potentialPerformerId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#potentialPerformerName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#potentialPerformerName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#processApplicationId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#processApplicationId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#processApplicationName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#processApplicationName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#processApplicationSnapshotName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#processApplicationSnapshotName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#processApplicationVersionId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#processApplicationVersionId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#processId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#processId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#processInstanceId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#processInstanceId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#processName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#processName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#processSnapshotName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#processSnapshotName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#processVersionId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#processVersionId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#resumedTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#resumedTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#shortProcessInstanceId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#shortProcessInstanceId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#startTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#startTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#state -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#state">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#suspendedTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#suspendedTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#taskInstanceId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#taskInstanceId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#taskRecord -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#taskRecord">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#terminatedTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#terminatedTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#timestamp -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#timestamp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#type -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#version -->
+
+
+    <owl:DatatypeProperty rdf:about="http://dba.ibm.com/project/enhanced/1.0#version">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Data -->
+
+
+    <owl:Class rdf:about="http://dba.ibm.com/project/enhanced/1.0#Data"/>
+    
+
+
+    <!-- http://dba.ibm.com/project/enhanced/1.0#Process -->
+
+
+    <owl:Class rdf:about="http://dba.ibm.com/project/enhanced/1.0#Process"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9.2018-12-12T06:37:32Z) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,127 @@
+# Vocabulary Properties
+uuid = 27481825-373d-434d-a367-f0b36cb576e6
+
+# poc.ilog.webperso.Campaign
+poc.ilog.webperso.Campaign#concept.label = campaign
+poc.ilog.webperso.Campaign.channel#phrase.navigation = {channel} of {this}
+poc.ilog.webperso.Campaign.id#phrase.navigation = {id} of {this}
+poc.ilog.webperso.Campaign.name#phrase.navigation = {name} of {this}
+poc.ilog.webperso.Campaign.segments#phrase.navigation = {segment} of {this}
+poc.ilog.webperso.Campaign.type#phrase.navigation = {type} of {this}
+
+# poc.ilog.webperso.Client
+poc.ilog.webperso.Client#concept.label = client
+poc.ilog.webperso.Client.id#phrase.navigation = {id} of {this}
+poc.ilog.webperso.Client.name#phrase.navigation = {name} of {this}
+
+# poc.ilog.webperso.Consumer
+poc.ilog.webperso.Consumer#concept.label = consumer
+poc.ilog.webperso.Consumer.age#phrase.action = set the age of {this} to {age}
+poc.ilog.webperso.Consumer.age#phrase.navigation = {age} of {this}
+poc.ilog.webperso.Consumer.areacode#phrase.action = set the areacode of {this} to {areacode}
+poc.ilog.webperso.Consumer.areacode#phrase.navigation = {areacode} of {this}
+poc.ilog.webperso.Consumer.browsertype#phrase.action = set the browsertype of {this} to {browsertype}
+poc.ilog.webperso.Consumer.browsertype#phrase.navigation = {browsertype} of {this}
+poc.ilog.webperso.Consumer.city#phrase.action = set the city of {this} to {city}
+poc.ilog.webperso.Consumer.city#phrase.navigation = {city} of {this}
+poc.ilog.webperso.Consumer.consumerid#phrase.action = set the consumerid of {this} to {consumerid}
+poc.ilog.webperso.Consumer.consumerid#phrase.navigation = {consumerid} of {this}
+poc.ilog.webperso.Consumer.cookieid#phrase.action = set the cookieid of {this} to {cookieid}
+poc.ilog.webperso.Consumer.cookieid#phrase.navigation = {cookieid} of {this}
+poc.ilog.webperso.Consumer.createdon#phrase.navigation = {createdon} of {this}
+poc.ilog.webperso.Consumer.dateofbirth#phrase.action = set the dateofbirth of {this} to {dateofbirth}
+poc.ilog.webperso.Consumer.dateofbirth#phrase.navigation = {dateofbirth} of {this}
+poc.ilog.webperso.Consumer.emailaddress#phrase.action = set the emailaddress of {this} to {emailaddress}
+poc.ilog.webperso.Consumer.emailaddress#phrase.navigation = {emailaddress} of {this}
+poc.ilog.webperso.Consumer.firstname#phrase.action = set the firstname of {this} to {firstname}
+poc.ilog.webperso.Consumer.firstname#phrase.navigation = {firstname} of {this}
+poc.ilog.webperso.Consumer.gender#phrase.action = set the gender of {this} to {gender}
+poc.ilog.webperso.Consumer.gender#phrase.navigation = {gender} of {this}
+poc.ilog.webperso.Consumer.getEvents(java.lang.String,int)#phrase.navigation = {this}'s events of type {0} in the last {1} days
+poc.ilog.webperso.Consumer.incomegroupcode#phrase.action = set the incomegroupcode of {this} to {incomegroupcode}
+poc.ilog.webperso.Consumer.incomegroupcode#phrase.navigation = {incomegroupcode} of {this}
+poc.ilog.webperso.Consumer.ipaddress#phrase.action = set the ipaddress of {this} to {ipaddress}
+poc.ilog.webperso.Consumer.ipaddress#phrase.navigation = {ipaddress} of {this}
+poc.ilog.webperso.Consumer.lastname#phrase.action = set the lastname of {this} to {lastname}
+poc.ilog.webperso.Consumer.lastname#phrase.navigation = {lastname} of {this}
+poc.ilog.webperso.Consumer.lastsubscribedon#phrase.action = set the lastsubscribedon of {this} to {lastsubscribedon}
+poc.ilog.webperso.Consumer.lastsubscribedon#phrase.navigation = {lastsubscribedon} of {this}
+poc.ilog.webperso.Consumer.lastunsubscribedon#phrase.action = set the lastunsubscribedon of {this} to {lastunsubscribedon}
+poc.ilog.webperso.Consumer.lastunsubscribedon#phrase.navigation = {lastunsubscribedon} of {this}
+poc.ilog.webperso.Consumer.lastupdatedon#phrase.action = set the lastupdatedon of {this} to {lastupdatedon}
+poc.ilog.webperso.Consumer.lastupdatedon#phrase.navigation = {lastupdatedon} of {this}
+poc.ilog.webperso.Consumer.messages#phrase.action = set the messages of {this} to {message}
+poc.ilog.webperso.Consumer.messages#phrase.navigation = {message} of {this}
+poc.ilog.webperso.Consumer.middlename#phrase.action = set the middlename of {this} to {middlename}
+poc.ilog.webperso.Consumer.middlename#phrase.navigation = {middlename} of {this}
+poc.ilog.webperso.Consumer.monthlypreferredmsgfrequency#phrase.action = set the monthlypreferredmsgfrequency of {this} to {monthlypreferredmsgfrequency}
+poc.ilog.webperso.Consumer.monthlypreferredmsgfrequency#phrase.navigation = {monthlypreferredmsgfrequency} of {this}
+poc.ilog.webperso.Consumer.mtdmessagecount#phrase.action = set the mtdmessagecount of {this} to {mtdmessagecount}
+poc.ilog.webperso.Consumer.mtdmessagecount#phrase.navigation = {mtdmessagecount} of {this}
+poc.ilog.webperso.Consumer.nickname#phrase.action = set the nickname of {this} to {nickname}
+poc.ilog.webperso.Consumer.nickname#phrase.navigation = {nickname} of {this}
+poc.ilog.webperso.Consumer.password#phrase.action = set the password of {this} to {password}
+poc.ilog.webperso.Consumer.password#phrase.navigation = {password} of {this}
+poc.ilog.webperso.Consumer.personicscluster#phrase.action = set the personicscluster of {this} to {personicscluster}
+poc.ilog.webperso.Consumer.personicscluster#phrase.navigation = {personicscluster} of {this}
+poc.ilog.webperso.Consumer.phonenumber#phrase.action = set the phonenumber of {this} to {phonenumber}
+poc.ilog.webperso.Consumer.phonenumber#phrase.navigation = {phonenumber} of {this}
+poc.ilog.webperso.Consumer.preferredchannel#phrase.action = set the preferredchannel of {this} to {preferredchannel}
+poc.ilog.webperso.Consumer.preferredchannel#phrase.navigation = {preferredchannel} of {this}
+poc.ilog.webperso.Consumer.prodcatofinterest1#phrase.action = set the prodcatofinterest1 of {this} to {prodcatofinterest1}
+poc.ilog.webperso.Consumer.prodcatofinterest1#phrase.navigation = {prodcatofinterest1} of {this}
+poc.ilog.webperso.Consumer.prodcatofinterest2#phrase.action = set the prodcatofinterest2 of {this} to {prodcatofinterest2}
+poc.ilog.webperso.Consumer.prodcatofinterest2#phrase.navigation = {prodcatofinterest2} of {this}
+poc.ilog.webperso.Consumer.prodstyleofinterest#phrase.action = set the prodstyleofinterest of {this} to {prodstyleofinterest}
+poc.ilog.webperso.Consumer.prodstyleofinterest#phrase.navigation = {prodstyleofinterest} of {this}
+poc.ilog.webperso.Consumer.profilesource#phrase.action = set the profilesource of {this} to {profilesource}
+poc.ilog.webperso.Consumer.profilesource#phrase.navigation = {profilesource} of {this}
+poc.ilog.webperso.Consumer.propensitytoclick#phrase.action = set the propensitytoclick of {this} to {propensitytoclick}
+poc.ilog.webperso.Consumer.propensitytoclick#phrase.navigation = {propensitytoclick} of {this}
+poc.ilog.webperso.Consumer.propensitytoopen#phrase.action = set the propensitytoopen of {this} to {propensitytoopen}
+poc.ilog.webperso.Consumer.propensitytoopen#phrase.navigation = {propensitytoopen} of {this}
+poc.ilog.webperso.Consumer.propensitytopurchase#phrase.action = set the propensitytopurchase of {this} to {propensitytopurchase}
+poc.ilog.webperso.Consumer.propensitytopurchase#phrase.navigation = {propensitytopurchase} of {this}
+poc.ilog.webperso.Consumer.propensitytovisit#phrase.action = set the propensitytovisit of {this} to {propensitytovisit}
+poc.ilog.webperso.Consumer.propensitytovisit#phrase.navigation = {propensitytovisit} of {this}
+poc.ilog.webperso.Consumer.purchasedprodcat1#phrase.action = set the purchasedprodcat1 of {this} to {purchasedprodcat1}
+poc.ilog.webperso.Consumer.purchasedprodcat1#phrase.navigation = {purchasedprodcat1} of {this}
+poc.ilog.webperso.Consumer.purchasedprodcat2#phrase.action = set the purchasedprodcat2 of {this} to {purchasedprodcat2}
+poc.ilog.webperso.Consumer.purchasedprodcat2#phrase.navigation = {purchasedprodcat2} of {this}
+poc.ilog.webperso.Consumer.state#phrase.action = set the state of {this} to {state}
+poc.ilog.webperso.Consumer.state#phrase.navigation = {state} of {this}
+poc.ilog.webperso.Consumer.statusactive#phrase.action = set the statusactive of {this} to {statusactive}
+poc.ilog.webperso.Consumer.statusactive#phrase.navigation = {statusactive} of {this}
+poc.ilog.webperso.Consumer.username#phrase.action = set the username of {this} to {username}
+poc.ilog.webperso.Consumer.username#phrase.navigation = {username} of {this}
+poc.ilog.webperso.Consumer.zipcode#phrase.action = set the zipcode of {this} to {zipcode}
+poc.ilog.webperso.Consumer.zipcode#phrase.navigation = {zipcode} of {this}
+
+# poc.ilog.webperso.Event
+poc.ilog.webperso.Event#concept.label = event2
+poc.ilog.webperso.Event.abandonedprodcategory#phrase.navigation = {abandonedprodcategory} of {this}
+poc.ilog.webperso.Event.abandonedprodstyle#phrase.navigation = {abandonedprodstyle} of {this}
+poc.ilog.webperso.Event.channel#phrase.navigation = {channel} of {this}
+poc.ilog.webperso.Event.consumerid#phrase.navigation = {consumerid} of {this}
+poc.ilog.webperso.Event.contentid#phrase.navigation = {contentid} of {this}
+poc.ilog.webperso.Event.contentprodcategory#phrase.navigation = {contentprodcategory} of {this}
+poc.ilog.webperso.Event.contentprodstyle#phrase.navigation = {contentprodstyle} of {this}
+poc.ilog.webperso.Event.contenttype#phrase.navigation = {contenttype} of {this}
+poc.ilog.webperso.Event.eventid#phrase.navigation = {eventid} of {this}
+poc.ilog.webperso.Event.eventtime#phrase.navigation = {eventtime} of {this}
+poc.ilog.webperso.Event.eventtype#phrase.navigation = {eventtype} of {this}
+poc.ilog.webperso.Event.purchasedprodcategory#phrase.navigation = {purchasedprodcategory} of {this}
+poc.ilog.webperso.Event.purchasedprodstyle#phrase.navigation = {purchasedprodstyle} of {this}
+poc.ilog.webperso.Event.source#phrase.navigation = {source} of {this}
+poc.ilog.webperso.Event.type#phrase.navigation = {type} of {this}
+
+# poc.ilog.webperso.EventLoader
+poc.ilog.webperso.EventLoader#concept.label = event loader
+
+# poc.ilog.webperso.Segment
+poc.ilog.webperso.Segment#concept.label = segment
+poc.ilog.webperso.Segment.addToScore(float)#phrase.action = add {0} to the score of {this}
+poc.ilog.webperso.Segment.id#phrase.navigation = {id} of {this}
+poc.ilog.webperso.Segment.name#phrase.navigation = {name} of {this}
+poc.ilog.webperso.Segment.score#phrase.action = set the score of {this} to {score}
+poc.ilog.webperso.Segment.score#phrase.navigation = {score} of {this}

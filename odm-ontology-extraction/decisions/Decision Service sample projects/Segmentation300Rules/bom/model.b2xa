@@ -1,0 +1,27 @@
+<b2x:translation xmlns:b2x="http://schemas.ilog.com/JRules/1.3/Translation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.ilog.com/JRules/1.3/Translation ilog/rules/schemas/1_3/b2x.xsd">
+    <id>e51df655-7fdc-4389-971d-5f90d9840179</id>
+    <lang>ARL</lang>
+    <class>
+        <businessName>poc.ilog.webperso.Consumer</businessName>
+        <method>
+            <name>getEvents</name>
+            <parameter type="java.lang.String"/>
+            <parameter type="int"/>
+            <body language="arl"><![CDATA[
+            return poc.ilog.webperso.EventLoader.getEvents(eventType, nbDaysBack, this.consumerid);
+
+            ]]></body>
+        </method>
+    </class>
+    <class>
+        <businessName>poc.ilog.webperso.Segment</businessName>
+        <method>
+            <name>addToScore</name>
+            <parameter type="float"/>
+            <body language="arl"><![CDATA[
+            this.score+= value;
+
+            ]]></body>
+        </method>
+    </class>
+</b2x:translation>

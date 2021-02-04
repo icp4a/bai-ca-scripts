@@ -1,0 +1,7 @@
+uuid = 29955f3f-508b-4c5b-99d1-39a5ad0e5bd6
+
+# myModel.odm.ShipmentPricingDecision
+myModel.odm.ShipmentPricingDecision#concept.dmn.isDecision = true
+myModel.odm.ShipmentPricingDecision#concept.label =  
+myModel.odm.ShipmentPricingDecision#concept.verbalization.term =  
+myModel.odm.ShipmentPricingDecision.run(myModel.odm.Shipment,myModel.CustomerStatus,myModel.odm.Method,java.lang.Double)#phrase.navigation = {shipment pricing decision} where {0, shipment} {1, customer} {2, method} {3, distance} 

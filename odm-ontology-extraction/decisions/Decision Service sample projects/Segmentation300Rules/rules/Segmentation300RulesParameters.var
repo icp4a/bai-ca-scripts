@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Segmentation300RulesParameters</name>
+  <uuid>be41c38d-2874-42d0-b5cb-f2ff49b5fb68</uuid>
+  <variables name="consumer" type="poc.ilog.webperso.Consumer" initialValue="null" verbalization="the consumer"/>
+  <variables name="client" type="poc.ilog.webperso.Client" initialValue="null" verbalization="the client"/>
+  <variables name="campaign" type="poc.ilog.webperso.Campaign" initialValue="null" verbalization="the campaign"/>
+</ilog.rules.studio.model.base:VariableSet>

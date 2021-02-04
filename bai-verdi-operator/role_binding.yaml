@@ -1,0 +1,15 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: bai-verdi-operator
+  labels:
+    app.kubernetes.io/instance: master-test
+    app.kubernetes.io/managed-by: helm
+    app.kubernetes.io/name: ibm-business-automation-insights
+subjects:
+- kind: ServiceAccount
+  name: bai-verdi-operator
+roleRef:
+  kind: Role
+  name: bai-verdi-operator
+  apiGroup: rbac.authorization.k8s.io

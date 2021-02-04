@@ -1,0 +1,18 @@
+
+property uuid "cc63edb1-a07a-49f1-afa1-2cb5a1685a19"
+package myModel.odm;
+
+
+public class ShipmentPricingDecision
+        property "dmn.isDecision" "true"
+        property "verbalization.term" " "
+{
+    public static java.lang.Double run(myModel.odm.Shipment shipment, myModel.CustomerStatus customer, myModel.odm.Method method, java.lang.Double distance)
+                property "argumentAttribute[0]" "Shipment"
+                property "argumentAttribute[1]" "Customer"
+                property "argumentAttribute[2]" "Method"
+                property "argumentAttribute[3]" "Distance"
+                property groups "Standard"
+                property prototype "true";
+}
+

@@ -1,0 +1,121 @@
+body, form, td, th {
+  font-family: tahoma,sans-serif;
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  border: 0px;
+  vertical-align: bottom;
+}
+
+.site-title {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial;
+  padding-left: 5px;
+}
+
+.collapsable-header {
+  background-image:url(bg_header.jpg);
+  padding:5px 10px 5px 10px;
+  color: white;
+  font-size:14px;
+  font-weight:bold;
+  font-family:Arial;
+  padding-left:5px;
+}
+
+.hidden { 
+   display: none; 
+} 
+
+.visible { 
+  display: inline; 
+}
+
+table.bluelist {
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-top-color: #BFBFBF;
+  border-right-color: #C0C0C0;
+  border-bottom-color: #C0C0C0;
+  border-left-color: #BFBFBF;
+  margin:0px;
+  border-collapse: collapse; 
+}
+table.bluelist tr.odd-row{
+  background-color: #F0F0F0;
+}
+
+table.bluelist td.odd-row{
+  margin:10px;
+  padding:2px;
+  color: #101010;
+  background-color: #EFEFEF;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-top-color: #BFBFBF;
+  border-right-color: #BFBFBF;
+  border-bottom-color: #BFBFBF;
+  border-left-color: #BFBFBF;
+}
+
+table.bluelist td{
+  margin:10px;
+  padding:0px;
+  color: #101010;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-top-color: #BFBFBF;
+  border-right-color: #BFBFBF;
+  border-bottom-color: #BFBFBF;
+  border-left-color: #BFBFBF;
+}
+
+table.bluelist th{
+  margin:10px;
+  padding:2px;
+  color: #FFFFFF;
+  background-color: #4E8AC2;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-top-color: #575875;
+  border-right-color: #575875;
+  border-bottom-color: #575875;
+  border-left-color: #575875;
+  height: 24px;
+  text-align:left;
+}
+
+table.bluelist th a, table.bluelist th a:visited, table.bluelist th a:link{
+  color: #FFFFFF;
+  text-decoration: none;  
+}
+

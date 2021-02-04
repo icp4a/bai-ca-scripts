@@ -1,0 +1,402 @@
+<synonyms>
+<concept id="http://watson.ibm.com/project/Tatzia/odm-timeseries/data">
+<alias>data</alias>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/odm-timeseries/in">
+<alias>in</alias>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest">
+<alias>loanrequest</alias>
+<alias>loan</alias>
+<alias>loans</alias>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#amount">
+	<alias>amount</alias>
+	<alias>amounts</alias>
+	<alias>the amount</alias>
+	<alias>an amount</alias>
+	<alias>the amounts...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#startDate">
+	<alias>startDate</alias>
+	<alias>start date</alias>
+	<alias>start dates</alias>
+	<alias>the start date</alias>
+	<alias>a start date</alias>
+	<alias>the start dates...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#duration">
+	<alias>duration</alias>
+	<alias>durations</alias>
+	<alias>the duration</alias>
+	<alias>a duration</alias>
+	<alias>the durations...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#loanToValue">
+	<alias>loanToValue</alias>
+	<alias>Loan to Value</alias>
+	<alias>Loan to Values</alias>
+	<alias>the Loan to Value</alias>
+	<alias>a Loan to Value</alias>
+	<alias>the Loan to Values...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#numberOfMonthlyPayments">
+	<alias>numberOfMonthlyPayments</alias>
+	<alias>number of monthly payments</alias>
+	<alias>number of monthly paymentses</alias>
+	<alias>the number of monthly payments</alias>
+	<alias>a number of monthly payments</alias>
+	<alias>the number of monthly paymentses...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#amount">
+	<alias>amount</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#startDate">
+	<alias>startDate</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#duration">
+	<alias>duration</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#numberOfMonthlyPayments">
+	<alias>numberOfMonthlyPayments</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/loanrequest#loanToValue">
+	<alias>loanToValue</alias>
+	</property>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower">
+<alias>borrower</alias>
+<alias>borrowers</alias>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#latestBankruptcyChapter">
+	<alias>latestBankruptcyChapter</alias>
+	<alias>latest bankruptcy chapter</alias>
+	<alias>latest bankruptcy chapters</alias>
+	<alias>the latest bankruptcy chapter</alias>
+	<alias>a latest bankruptcy chapter</alias>
+	<alias>the latest bankruptcy chapters...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#creditScore">
+	<alias>creditScore</alias>
+	<alias>credit score</alias>
+	<alias>credit scores</alias>
+	<alias>the credit score</alias>
+	<alias>a credit score</alias>
+	<alias>the credit scores...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#latestBankruptcyReason">
+	<alias>latestBankruptcyReason</alias>
+	<alias>latest bankruptcy reason</alias>
+	<alias>latest bankruptcy reasons</alias>
+	<alias>the latest bankruptcy reason</alias>
+	<alias>a latest bankruptcy reason</alias>
+	<alias>the latest bankruptcy reasons...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#lastName">
+	<alias>lastName</alias>
+	<alias>last name</alias>
+	<alias>last names</alias>
+	<alias>the last name</alias>
+	<alias>a last name</alias>
+	<alias>the last names...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#SSNCode">
+	<alias>SSNCode</alias>
+	<alias>SSNCodes</alias>
+	<alias>the SSNCode</alias>
+	<alias>a SSNCode</alias>
+	<alias>the SSNCodes...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#latestBankruptcyDate">
+	<alias>latestBankruptcyDate</alias>
+	<alias>latest bankruptcy date</alias>
+	<alias>latest bankruptcy dates</alias>
+	<alias>the latest bankruptcy date</alias>
+	<alias>a latest bankruptcy date</alias>
+	<alias>the latest bankruptcy dates...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#birthDate">
+	<alias>birthDate</alias>
+	<alias>birth date</alias>
+	<alias>birth dates</alias>
+	<alias>the birth date</alias>
+	<alias>a birth date</alias>
+	<alias>the birth dates...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#firstName">
+	<alias>firstName</alias>
+	<alias>first name</alias>
+	<alias>first names</alias>
+	<alias>the first name</alias>
+	<alias>a first name</alias>
+	<alias>the first names...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#age">
+	<alias>age</alias>
+	<alias>ages</alias>
+	<alias>the age</alias>
+	<alias>an age</alias>
+	<alias>the ages...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#zipCode">
+	<alias>zipCode</alias>
+	<alias>zip code</alias>
+	<alias>zip codes</alias>
+	<alias>the zip code</alias>
+	<alias>a zip code</alias>
+	<alias>the zip codes...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#yearlyIncome">
+	<alias>yearlyIncome</alias>
+	<alias>yearly income</alias>
+	<alias>yearly incomes</alias>
+	<alias>the yearly income</alias>
+	<alias>a yearly income</alias>
+	<alias>the yearly incomes...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#latestBankruptcyChapter">
+	<alias>latestBankruptcyChapter</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#creditScore">
+	<alias>creditScore</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#firstName">
+	<alias>firstName</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#age">
+	<alias>age</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#zipCode">
+	<alias>zipCode</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#yearlyIncome">
+	<alias>yearlyIncome</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#latestBankruptcyReason">
+	<alias>latestBankruptcyReason</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#lastName">
+	<alias>lastName</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#SSNCode">
+	<alias>SSNCode</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#latestBankruptcyDate">
+	<alias>latestBankruptcyDate</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/borrower#birthDate">
+	<alias>birthDate</alias>
+	</property>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report">
+<alias>report</alias>
+<alias>reports</alias>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#yearlyRepayment">
+	<alias>yearlyRepayment</alias>
+	<alias>yearly repayment</alias>
+	<alias>yearly repayments</alias>
+	<alias>the yearly repayment</alias>
+	<alias>a yearly repayment</alias>
+	<alias>the yearly repayments...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#insurance">
+	<alias>insurance</alias>
+	<alias>insurances</alias>
+	<alias>the insurance</alias>
+	<alias>an insurance</alias>
+	<alias>the insurances...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#insuranceRequired">
+	<alias>insuranceRequired</alias>
+	<alias>insurance required</alias>
+	<alias>insurance requireds</alias>
+	<alias>the insurance required</alias>
+	<alias>an insurance required</alias>
+	<alias>the insurance requireds...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#validData">
+	<alias>validData</alias>
+	<alias>valid data</alias>
+	<alias>valid datas</alias>
+	<alias>the valid data</alias>
+	<alias>a valid data</alias>
+	<alias>the valid datas...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#approved">
+	<alias>approved</alias>
+	<alias>approveds</alias>
+	<alias>the approved</alias>
+	<alias>an approved</alias>
+	<alias>the approveds...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#yearlyInterestRate">
+	<alias>yearlyInterestRate</alias>
+	<alias>yearly interest rate</alias>
+	<alias>yearly interest rates</alias>
+	<alias>the yearly interest rate</alias>
+	<alias>a yearly interest rate</alias>
+	<alias>the yearly interest rates...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#monthlyRepayment">
+	<alias>monthlyRepayment</alias>
+	<alias>monthly repayment</alias>
+	<alias>monthly repayments</alias>
+	<alias>the monthly repayment</alias>
+	<alias>a monthly repayment</alias>
+	<alias>the monthly repayments...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#insuranceRate">
+	<alias>insuranceRate</alias>
+	<alias>insurance rate</alias>
+	<alias>insurance rates</alias>
+	<alias>the insurance rate</alias>
+	<alias>an insurance rate</alias>
+	<alias>the insurance rates...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#message">
+	<alias>message</alias>
+	<alias>messages</alias>
+	<alias>the message</alias>
+	<alias>a message</alias>
+	<alias>the messages...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#messages">
+	<alias>messages</alias>
+	<alias>message</alias>
+	<alias>the message</alias>
+	<alias>a message</alias>
+	<alias>the messages...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#insurance">
+	<alias>insurance</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#insuranceRequired">
+	<alias>insuranceRequired</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#approved">
+	<alias>approved</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#yearlyInterestRate">
+	<alias>yearlyInterestRate</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#yearlyRepayment">
+	<alias>yearlyRepayment</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#validData">
+	<alias>validData</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#monthlyRepayment">
+	<alias>monthlyRepayment</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#insuranceRate">
+	<alias>insuranceRate</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#message">
+	<alias>message</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/report#messages">
+	<alias>messages</alias>
+	</property>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/odm-timeseries/mydeployment">
+<alias>mydeployment</alias>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/odm-timeseries/LoanValidation_ServiceRuleset">
+<alias>LoanValidation_ServiceRuleset</alias>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy">
+<alias>bankruptcy</alias>
+<alias>bankruptcies</alias>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy#reason">
+	<alias>reason</alias>
+	<alias>reasons</alias>
+	<alias>the reason</alias>
+	<alias>a reason</alias>
+	<alias>the reasons...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy#date">
+	<alias>date</alias>
+	<alias>dates</alias>
+	<alias>the date</alias>
+	<alias>a date</alias>
+	<alias>the dates...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy#chapter">
+	<alias>chapter</alias>
+	<alias>chapters</alias>
+	<alias>the chapter</alias>
+	<alias>a chapter</alias>
+	<alias>the chapters...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy#reason">
+	<alias>reason</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy#date">
+	<alias>date</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/bankruptcy#chapter">
+	<alias>chapter</alias>
+	</property>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn">
+<alias>ssn</alias>
+<alias>SSN</alias>
+<alias>SSNs</alias>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#serialNumber">
+	<alias>serialNumber</alias>
+	<alias>serial number</alias>
+	<alias>serial numbers</alias>
+	<alias>the serial number</alias>
+	<alias>a serial number</alias>
+	<alias>the serial numbers...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#areaNumber">
+	<alias>areaNumber</alias>
+	<alias>area number</alias>
+	<alias>area numbers</alias>
+	<alias>the area number</alias>
+	<alias>an area number</alias>
+	<alias>the area numbers...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#digits">
+	<alias>digits</alias>
+	<alias>number of digits</alias>
+	<alias>numbers of digits</alias>
+	<alias>the number of digits</alias>
+	<alias>a number of digits</alias>
+	<alias>the numbers of digits...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#fullNumber">
+	<alias>fullNumber</alias>
+	<alias>full number</alias>
+	<alias>full numbers</alias>
+	<alias>the full number</alias>
+	<alias>a full number</alias>
+	<alias>the full numbers...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#groupCode">
+	<alias>groupCode</alias>
+	<alias>group code</alias>
+	<alias>group codes</alias>
+	<alias>the group code</alias>
+	<alias>a group code</alias>
+	<alias>the group codes...</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#digits">
+	<alias>digits</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#fullNumber">
+	<alias>fullNumber</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#serialNumber">
+	<alias>serialNumber</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#areaNumber">
+	<alias>areaNumber</alias>
+	</property>
+	<property id="http://watson.ibm.com/project/Tatzia/odm-timeseries/ssn#groupCode">
+	<alias>groupCode</alias>
+	</property>
+</concept>
+<concept id="http://watson.ibm.com/project/Tatzia/odm-timeseries/out">
+<alias>out</alias>
+</concept>
+</synonyms>
