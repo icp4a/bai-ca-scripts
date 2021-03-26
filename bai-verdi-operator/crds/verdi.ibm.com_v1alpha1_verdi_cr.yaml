@@ -22,8 +22,10 @@ spec:
   cp4acrprefix: "bai"
   registerconfigs: true
   umsenabled: true
+  umshost: "ums-sso.example.com"
   imagerepository: "image repo"
   imagetag: "2003.rc5"
   imagepullsecretname: "image pull repo credentials"
-  runseederassidecar: true
+  runseederassidecar: false
   acceptlicense: true 
+  pvstoragetype: "STORAGE TYPE"
