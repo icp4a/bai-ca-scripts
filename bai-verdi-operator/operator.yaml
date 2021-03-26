@@ -22,14 +22,14 @@ spec:
         app.kubernetes.io/name: ibm-business-automation-insights
       annotations:
         cloudpakId: 94a9c8c358bb43ba8fbdea62e7e166a5
-        cloudpakName: IBM Cloud Pak for Automation
-        cloudpakVersion: 20.0.3
+        cloudpakName: IBM Cloud Pak for Business Automation
+        cloudpakVersion: 21.0.1
         productChargedContainers: ""
         productCloudpakRatio: "1:1"
         productID: 11117b07ee53456a9cd41fb6751b0759
-        productMetric: VIRTUAL_PROCESSOR_CORE
-        productName: Business Automation Insights - CP4Auto - Non Prod
-        productVersion: 20.0.3
+        productMetric: FREE
+        productName: Business Automation Insights - CP4BA - Non Prod
+        productVersion: 21.0.1
     spec:
       serviceAccountName: bai-verdi-operator
       containers:
@@ -56,4 +56,4 @@ spec:
                 - all
       imagePullSecrets:
       # Replace this with the secret name
-      - name: registry-access-credentials
+      - name: XXXXX
